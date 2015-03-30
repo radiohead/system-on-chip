@@ -1,0 +1,60 @@
+Checking out Encounter license ...
+Encounter_Digital_Impl_Sys_XL 9.1 license checkout succeeded.
+You can run 2 CPU jobs with the base license that is currently checked out.
+If required, use the setMultiCpuUsage command to enable multi-CPU processing.
+**ERROR: (ENCOAX-148):	Could not open shared library libfeoax22.so : liboaDesign.so: cannot open shared object file: No such file or directory
+
+**ERROR: (ENCOAX-148):	OA features will be disabled in this session.
+
+
+*******************************************************************
+*   Copyright (c)  Cadence Design Systems, Inc.  1996 - 2010.     *
+*                     All rights reserved.                        *
+*                                                                 *
+*                                                                 *
+*                                                                 *
+* This program contains confidential and trade secret information *
+* of Cadence Design Systems, Inc. and is protected by copyright   *
+* law and international treaties.  Any reproduction, use,         *
+* distribution or disclosure of this program or any portion of it,*
+* or any attempt to obtain a human-readable version of this       *
+* program, without the express, prior written consent of          *
+* Cadence Design Systems, Inc., is strictly prohibited.           *
+*                                                                 *
+*                 Cadence Design Systems, Inc.                    *
+*                    2655 Seely Avenue                            *
+*                   San Jose, CA 95134,  USA                      *
+*                                                                 *
+*                                                                 *
+*******************************************************************
+
+@(#)CDS: Encounter v09.12-s159_1 (32bit) 07/15/2010 13:17 (Linux 2.6)
+@(#)CDS: NanoRoute v09.12-s013 NR100629-2344/USR64-UB (database version 2.30, 102.1.1) {superthreading v1.15}
+@(#)CDS: CeltIC v09.12-s012_1 (32bit) 07/01/2010 02:29:05 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: AAE 09.12-e022 (32bit) 07/15/2010 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CTE 09.12-s069_1 (32bit) Jul 15 2010 05:39:06 (Linux 2.6.9-89.0.19.ELsmp)
+@(#)CDS: CPE v09.12-s009
+--- Starting "Encounter v09.12-s159_1" on Mon Mar 30 09:43:18 2015 (mem=46.6M) ---
+--- Running on drain7 (x86_64 w/Linux 3.10.72) ---
+This version was compiled on Thu Jul 15 13:17:03 PDT 2010.
+Set DBUPerIGU to 1000.
+Set net toggle Scale Factor to 1.00
+Set Shrink Factor to 1.00000
+*** Memory pool thread-safe mode activated.
+<CMD> encMessage warning 0
+Suppress "**WARN ..." messages.
+<CMD> encMessage debug 0
+<CMD> encMessage info 0
+Reading config file - shift_adder.enc.dat/shift_adder.conf
+*** End library_loading (cpu=0.06min, mem=26.7M, fe_cpu=0.15min, fe_mem=295.7M) ***
+shift_adder
+Loading preference file shift_adder.enc.dat/enc.pref.tcl ...
+Loading mode file shift_adder.enc.dat/shift_adder.mode ...
+loading place ...
+loading route ...
+<CMD> setDrawView place
+<CMD> windowSelect 14.271 17.979 33.352 21.025
+<CMD> deselectAll
+
+*** Memory Usage v0.159.2.9 (Current mem = 316.215M, initial mem = 46.621M) ***
+--- Ending "Encounter" (totcpu=0:00:25.3, real=0:02:52, mem=316.2M) ---

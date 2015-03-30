@@ -1,0 +1,15 @@
+/home/igosul/system-on-chip/ex2/post_sim/shift_adder_tb.vhd {1 {vcom -work work -2002 -explicit -vopt /home/igosul/system-on-chip/ex2/post_sim/shift_adder_tb.vhd
+Model Technology ModelSim SE-64 vcom 6.4a Compiler 2008.08 Aug 28 2008
+-- Loading package standard
+-- Loading package std_logic_1164
+-- Compiling entity shift_adder_testbench
+-- Compiling architecture testing of shift_adder_testbench
+
+} {} {}} /home/igosul/system-on-chip/ex2/post_sim/netlist_layout.v {1 {vlog -work work -vopt -nocovercells /home/igosul/system-on-chip/ex2/post_sim/netlist_layout.v
+Model Technology ModelSim SE-64 vlog 6.4a Compiler 2008.08 Aug 28 2008
+-- Compiling module shift_adder
+
+Top level modules:
+	shift_adder
+
+} {} {}}

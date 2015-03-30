@@ -1,0 +1,214 @@
+# //  ModelSim SE-64 6.4a Aug 28 2008 Linux 3.10.72
+# //
+# //  Copyright 1991-2008 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project ps-verification
+# reading /soft/Mentor/Modelsim_6.4a/modeltech/linux_x86_64/../modelsim.ini
+# Loading project post-sim-verification
+# Compile of netlist_layout.v was successful.
+# Compile of shift_adder_tb.vhd was successful.
+# 2 compiles, 0 failed with no errors. 
+vmap fsd0a_a_generic_core /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/modelsim/Linux/fsd0a_a_generic_core
+# Modifying /home/igosul/system-on-chip/ex2/post_sim/post-sim-verification.mpf
+
+vsim -L fsd0a_a_generic_core -sdftyp /shift_adder_testbench/dut=/home/igosul/system-on-chip/ex2/post_sim/layout.sdf -sdfnoerror -sdfnowarn -t ps work.shift_adder_testbench
+# vsim -L fsd0a_a_generic_core -sdftyp /shift_adder_testbench/dut=/home/igosul/system-on-chip/ex2/post_sim/layout.sdf -sdfnoerror -sdfnowarn -t ps work.shift_adder_testbench 
+# ** Note: (vsim-3812) Design is being optimized...
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(22254): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(22254): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(22426): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(22426): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(84627): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(84627): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(29840): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(29840): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(3948): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(3948): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(23694): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(23694): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(44572): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(44572): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(49820): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(49820): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(25261): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(25261): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(24640): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(24640): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(437): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(437): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(35824): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(35824): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(37570): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(37570): OPT VITAL: process 'vitalbehavior' optimized.
+###### ../vhdl/fsd0a_a_generic_core_VITAL.vhd(49912): END OF FILE
+# ** Note: ../vhdl/fsd0a_a_generic_core_VITAL.vhd(49912): OPT VITAL: process 'vitalbehavior' optimized.
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.shift_adder_testbench(testing)#1
+# Loading work.shift_adder(fast)
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading fsd0a_a_generic_core.vtables
+# Loading fsd0a_a_generic_core.invckx16(vital)#1
+# Loading fsd0a_a_generic_core.invckx20(vital)#1
+# Loading fsd0a_a_generic_core.qdffx1(vital)#1
+# Loading fsd0a_a_generic_core.muxb2x1(vital)#1
+# Loading fsd0a_a_generic_core.ao12x1(vital)#1
+# Loading fsd0a_a_generic_core.invx1(vital)#1
+# Loading fsd0a_a_generic_core.oai12x1(vital)#1
+# Loading fsd0a_a_generic_core.or2b1xlp(vital)#1
+# Loading fsd0a_a_generic_core.maoi1x1(vital)#1
+# Loading fsd0a_a_generic_core.invxlp(vital)#1
+# Loading fsd0a_a_generic_core.an2x1(vital)#1
+# Loading fsd0a_a_generic_core.nd2x1(vital)#1
+# Loading fsd0a_a_generic_core.nr2x1(vital)#1
+# Loading fsd0a_a_generic_core.or2x1(vital)#1
+# Loading instances from /home/igosul/system-on-chip/ex2/post_sim/layout.sdf
+# Loading timing data from /home/igosul/system-on-chip/ex2/post_sim/layout.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Region: /shift_adder_testbench  File: /home/igosul/system-on-chip/ex2/post_sim/shift_adder_tb.vhd
+
+view wave
+# .main_pane.mdi.interior.cs.vm.paneset.cli_1.wf.clip.cs.pw.wf
+run 100 ns
+# ** Warning: */QDFFX1 PULSE WIDTH  Low VIOLATION ON CK;
+#   Expected := 0.149 ns; Observed := 0.007 ns; At : 0.016 ns
+#    Time: 16 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/\result_reg[7] 
+# ** Warning: */QDFFX1 PULSE WIDTH  Low VIOLATION ON CK;
+#   Expected := 0.149 ns; Observed := 0.007 ns; At : 0.016 ns
+#    Time: 16 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/\result_reg[6] 
+# ** Warning: */QDFFX1 PULSE WIDTH  Low VIOLATION ON CK;
+#   Expected := 0.149 ns; Observed := 0.007 ns; At : 0.016 ns
+#    Time: 16 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/\result_reg[5] 
+# ** Warning: */QDFFX1 PULSE WIDTH  Low VIOLATION ON CK;
+#   Expected := 0.149 ns; Observed := 0.007 ns; At : 0.016 ns
+#    Time: 16 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/\result_reg[4] 
+# ** Warning: */QDFFX1 PULSE WIDTH  Low VIOLATION ON CK;
+#   Expected := 0.149 ns; Observed := 0.007 ns; At : 0.016 ns
+#    Time: 16 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/\result_reg[3] 
+# ** Warning: */QDFFX1 PULSE WIDTH  Low VIOLATION ON CK;
+#   Expected := 0.149 ns; Observed := 0.007 ns; At : 0.016 ns
+#    Time: 16 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/\result_reg[2] 
+# ** Warning: */QDFFX1 PULSE WIDTH  Low VIOLATION ON CK;
+#   Expected := 0.149 ns; Observed := 0.007 ns; At : 0.016 ns
+#    Time: 16 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/\result_reg[1] 
+# ** Warning: */QDFFX1 PULSE WIDTH  Low VIOLATION ON CK;
+#   Expected := 0.149 ns; Observed := 0.007 ns; At : 0.016 ns
+#    Time: 16 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/\result_reg[0] 
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 4.026 ns; Newly Scheduled Value := 0 @ 4.074 ns;
+#    Time: 4009 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g454
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 8.114 ns; Newly Scheduled Value := 0 @ 8.148 ns;
+#    Time: 8096 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 8.11 ns; Newly Scheduled Value := 0 @ 8.153 ns;
+#    Time: 8101 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g436
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 8.114 ns; Newly Scheduled Value := 0 @ 8.157 ns;
+#    Time: 8105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 8.11 ns; Newly Scheduled Value := 0 @ 8.157 ns;
+#    Time: 8105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g439
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 12.044 ns; Newly Scheduled Value := 0 @ 12.074 ns;
+#    Time: 12009 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g454
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 12.046 ns; Newly Scheduled Value := 1 @ 12.069 ns;
+#    Time: 12033 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g460
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 12.113 ns; Newly Scheduled Value := 0 @ 12.143 ns;
+#    Time: 12069 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 12.11 ns; Newly Scheduled Value := 0 @ 12.142 ns;
+#    Time: 12078 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g448
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 12.113 ns; Newly Scheduled Value := 0 @ 12.178 ns;
+#    Time: 12104 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 24.114 ns; Newly Scheduled Value := 0 @ 24.148 ns;
+#    Time: 24096 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 24.11 ns; Newly Scheduled Value := 0 @ 24.153 ns;
+#    Time: 24101 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g436
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 24.114 ns; Newly Scheduled Value := 0 @ 24.157 ns;
+#    Time: 24105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 24.11 ns; Newly Scheduled Value := 0 @ 24.157 ns;
+#    Time: 24105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g439
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 28.044 ns; Newly Scheduled Value := 0 @ 28.074 ns;
+#    Time: 28009 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g454
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 28.046 ns; Newly Scheduled Value := 1 @ 28.069 ns;
+#    Time: 28033 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g460
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 28.113 ns; Newly Scheduled Value := 0 @ 28.143 ns;
+#    Time: 28069 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 28.11 ns; Newly Scheduled Value := 0 @ 28.142 ns;
+#    Time: 28078 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g448
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 28.113 ns; Newly Scheduled Value := 0 @ 28.178 ns;
+#    Time: 28104 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 40.114 ns; Newly Scheduled Value := 0 @ 40.148 ns;
+#    Time: 40096 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 40.11 ns; Newly Scheduled Value := 0 @ 40.153 ns;
+#    Time: 40101 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g436
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 40.114 ns; Newly Scheduled Value := 0 @ 40.157 ns;
+#    Time: 40105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 40.11 ns; Newly Scheduled Value := 0 @ 40.157 ns;
+#    Time: 40105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g439
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 44.044 ns; Newly Scheduled Value := 0 @ 44.074 ns;
+#    Time: 44009 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g454
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 44.046 ns; Newly Scheduled Value := 1 @ 44.069 ns;
+#    Time: 44033 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g460
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 44.113 ns; Newly Scheduled Value := 0 @ 44.143 ns;
+#    Time: 44069 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 44.11 ns; Newly Scheduled Value := 0 @ 44.142 ns;
+#    Time: 44078 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g448
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 44.113 ns; Newly Scheduled Value := 0 @ 44.178 ns;
+#    Time: 44104 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 56.114 ns; Newly Scheduled Value := 0 @ 56.148 ns;
+#    Time: 56096 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 56.11 ns; Newly Scheduled Value := 0 @ 56.153 ns;
+#    Time: 56101 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g436
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 56.114 ns; Newly Scheduled Value := 0 @ 56.157 ns;
+#    Time: 56105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 56.11 ns; Newly Scheduled Value := 0 @ 56.157 ns;
+#    Time: 56105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g439
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 60.044 ns; Newly Scheduled Value := 0 @ 60.074 ns;
+#    Time: 60009 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g454
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 60.046 ns; Newly Scheduled Value := 1 @ 60.069 ns;
+#    Time: 60033 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g460
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 60.113 ns; Newly Scheduled Value := 0 @ 60.143 ns;
+#    Time: 60069 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 60.11 ns; Newly Scheduled Value := 0 @ 60.142 ns;
+#    Time: 60078 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g448
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 60.113 ns; Newly Scheduled Value := 0 @ 60.178 ns;
+#    Time: 60104 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 72.114 ns; Newly Scheduled Value := 0 @ 72.148 ns;
+#    Time: 72096 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 72.11 ns; Newly Scheduled Value := 0 @ 72.153 ns;
+#    Time: 72101 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g436
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 72.114 ns; Newly Scheduled Value := 0 @ 72.157 ns;
+#    Time: 72105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 72.11 ns; Newly Scheduled Value := 0 @ 72.157 ns;
+#    Time: 72105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g439
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 76.044 ns; Newly Scheduled Value := 0 @ 76.074 ns;
+#    Time: 76009 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g454
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 76.046 ns; Newly Scheduled Value := 1 @ 76.069 ns;
+#    Time: 76033 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g460
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 76.113 ns; Newly Scheduled Value := 0 @ 76.143 ns;
+#    Time: 76069 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 76.11 ns; Newly Scheduled Value := 0 @ 76.142 ns;
+#    Time: 76078 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g448
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 76.113 ns; Newly Scheduled Value := 0 @ 76.178 ns;
+#    Time: 76104 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 88.114 ns; Newly Scheduled Value := 0 @ 88.148 ns;
+#    Time: 88096 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 88.11 ns; Newly Scheduled Value := 0 @ 88.153 ns;
+#    Time: 88101 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g436
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 88.114 ns; Newly Scheduled Value := 0 @ 88.157 ns;
+#    Time: 88105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 88.11 ns; Newly Scheduled Value := 0 @ 88.157 ns;
+#    Time: 88105 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g439
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 92.044 ns; Newly Scheduled Value := 0 @ 92.074 ns;
+#    Time: 92009 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g454
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 0 @ 92.046 ns; Newly Scheduled Value := 1 @ 92.069 ns;
+#    Time: 92033 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g460
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 92.113 ns; Newly Scheduled Value := 0 @ 92.143 ns;
+#    Time: 92069 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g445
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := X @ 92.11 ns; Newly Scheduled Value := 0 @ 92.142 ns;
+#    Time: 92078 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g448
+# ** Warning: VitalGlitch: GLITCH Detected on port O ; Preempted Future Value := 1 @ 92.113 ns; Newly Scheduled Value := 0 @ 92.178 ns;
+#    Time: 92104 ps  Iteration: 0  Instance: /shift_adder_testbench/dut/g442

@@ -1,0 +1,2117 @@
+* RC extraction data for design shift_adder
+*
+*
+*
+*|DSPF 1.0
+*
+*|VENDOR "Silicon Perspective, A Cadence Company"
+*|PROGRAM "FirstEncounter System"
+*|DIVIDER /
+*|DELIMITER :
+*|BUSBIT []
+*
+.SUBCKT shift_adder 
++ clock reset lefthand[7] lefthand[6] lefthand[5] lefthand[4] lefthand[3] lefthand[2] lefthand[1] lefthand[0] 
++ righthand[7] righthand[6] righthand[5] righthand[4] righthand[3] righthand[2] righthand[1] righthand[0] result[8] result[7] 
++ result[6] result[5] result[4] result[3] result[2] result[1] result[0] 
+
+* Net Section
+*
+*
+*|GROUND_NET 0
+*
+*|NET clock__L2_N0 0.003847PF
+*|I (result_reg\[1\]:CK result_reg\[1\] CK I 0.001630PF 20.580 17.360)
+*|I (result_reg\[0\]:CK result_reg\[0\] CK I 0.001630PF 15.820 17.360)
+*|I (result_reg\[6\]:CK result_reg\[6\] CK I 0.001630PF 20.020 11.760)
+*|I (result_reg\[7\]:CK result_reg\[7\] CK I 0.001630PF 23.100 9.520)
+*|I (result_reg\[4\]:CK result_reg\[4\] CK I 0.001630PF 16.940 15.120)
+*|I (clock__L2_I0:O clock__L2_I0 O O 0.000000PF 14.420 12.040)
+*|I (result_reg\[5\]:CK result_reg\[5\] CK I 0.001630PF 14.420 9.520)
+*|I (result_reg\[2\]:CK result_reg\[2\] CK I 0.001630PF 25.900 11.760)
+*|I (result_reg\[3\]:CK result_reg\[3\] CK I 0.001630PF 9.940 20.720)
+*|S (clock__L2_N0_0 20.580 17.360)
+*|S (clock__L2_N0_1 20.020 17.360)
+*|S (clock__L2_N0_2 20.580 17.360)
+*|S (clock__L2_N0_3 20.020 17.360)
+*|S (clock__L2_N0_4 15.820 17.360)
+*|S (clock__L2_N0_6 20.020 11.760)
+*|S (clock__L2_N0_7 15.820 17.360)
+*|S (clock__L2_N0_8 15.820 17.360)
+*|S (clock__L2_N0_9 20.020 11.760)
+*|S (clock__L2_N0_10 20.020 9.520)
+*|S (clock__L2_N0_11 15.820 15.120)
+*|S (clock__L2_N0_13 20.020 11.760)
+*|S (clock__L2_N0_14 20.020 9.520)
+*|S (clock__L2_N0_15 15.820 15.120)
+*|S (clock__L2_N0_16 15.820 12.040)
+*|S (clock__L2_N0_18 23.100 9.520)
+*|S (clock__L2_N0_19 16.940 15.120)
+*|S (clock__L2_N0_20 15.820 12.040)
+*|S (clock__L2_N0_21 25.900 9.520)
+*|S (clock__L2_N0_22 23.100 9.520)
+*|S (clock__L2_N0_23 16.940 15.120)
+*|S (clock__L2_N0_24 14.420 12.040)
+*|S (clock__L2_N0_25 25.900 9.520)
+*|S (clock__L2_N0_28 14.420 12.040)
+*|S (clock__L2_N0_29 25.900 11.760)
+*|S (clock__L2_N0_30 14.420 9.520)
+*|S (clock__L2_N0_32 25.900 11.760)
+*|S (clock__L2_N0_34 25.900 11.760)
+*|S (clock__L2_N0_35 9.940 12.320)
+*|S (clock__L2_N0_37 9.940 12.320)
+*|S (clock__L2_N0_38 9.940 12.320)
+*|S (clock__L2_N0_39 9.940 20.720)
+*|S (clock__L2_N0_40 9.940 20.720)
+*|S (clock__L2_N0_41 9.940 20.720)
+C1_0 clock__L2_N0_0 0 0.000028PF
+C2_0 clock__L2_N0_1 0 0.000234PF
+C3_0 clock__L2_N0_3 0 0.000272PF
+C4_0 clock__L2_N0_4 0 0.000206PF
+C5_0 clock__L2_N0_6 0 0.000380PF
+C6_0 clock__L2_N0_7 0 0.000109PF
+C7_0 clock__L2_N0_10 0 0.000109PF
+C8_0 clock__L2_N0_11 0 0.000258PF
+C9_0 clock__L2_N0_14 0 0.000151PF
+C10_0 clock__L2_N0_15 0 0.000055PF
+C11_0 clock__L2_N0_16 0 0.000149PF
+C12_0 clock__L2_N0_18 0 0.000289PF
+C13_0 clock__L2_N0_19 0 0.000055PF
+C14_0 clock__L2_N0_20 0 0.000069PF
+C15_0 clock__L2_N0_21 0 0.000138PF
+C16_0 clock__L2_N0_24 0 0.000069PF
+C17_0 clock__L2_N0_25 0 0.000109PF
+C18_0 clock__L2_N0_28 0 0.000123PF
+C19_0 clock__L2_N0_29 0 0.000109PF
+C20_0 clock__L2_N0_30 0 0.000123PF
+C21_0 clock__L2_N0_38 0 0.000407PF
+C22_0 clock__L2_N0_39 0 0.000407PF
+R1_0 clock__L2_N0_41 result_reg\[3\]:CK 4.000000
+R2_0 clock__L2_N0_40 clock__L2_N0_41 4.000000
+R3_0 clock__L2_N0_39 clock__L2_N0_40 4.000000
+R4_0 clock__L2_N0_38 clock__L2_N0_39 6.300000
+R5_0 clock__L2_N0_37 clock__L2_N0_38 4.000000
+R6_0 clock__L2_N0_35 clock__L2_N0_37 4.000000
+R7_0 clock__L2_N0_34 result_reg\[2\]:CK 4.000000
+R8_0 clock__L2_I0:O clock__L2_N0_35 4.000000
+R9_0 clock__L2_N0_32 clock__L2_N0_34 4.000000
+R10_0 clock__L2_N0_30 result_reg\[5\]:CK 4.000000
+R11_0 clock__L2_N0_29 clock__L2_N0_32 4.000000
+R12_0 clock__L2_N0_28 clock__L2_I0:O 4.000000
+R13_0 clock__L2_N0_28 clock__L2_N0_30 1.890000
+R14_0 clock__L2_N0_25 clock__L2_N0_29 1.680000
+R15_0 clock__L2_N0_24 clock__L2_N0_28 4.000000
+R16_0 clock__L2_N0_23 result_reg\[4\]:CK 4.000000
+R17_0 clock__L2_N0_22 result_reg\[7\]:CK 4.000000
+R18_0 clock__L2_N0_21 clock__L2_N0_25 4.000000
+R19_0 clock__L2_N0_20 clock__L2_N0_24 1.050000
+R20_0 clock__L2_N0_19 clock__L2_N0_23 4.000000
+R21_0 clock__L2_N0_18 clock__L2_N0_22 4.000000
+R22_0 clock__L2_N0_18 clock__L2_N0_21 2.100000
+R23_0 clock__L2_N0_16 clock__L2_N0_20 4.000000
+R24_0 clock__L2_N0_15 clock__L2_N0_19 0.840000
+R25_0 clock__L2_N0_14 clock__L2_N0_18 2.310000
+R26_0 clock__L2_N0_13 result_reg\[6\]:CK 4.000000
+R27_0 clock__L2_N0_11 clock__L2_N0_16 2.310000
+R28_0 clock__L2_N0_11 clock__L2_N0_15 4.000000
+R29_0 clock__L2_N0_10 clock__L2_N0_14 4.000000
+R30_0 clock__L2_N0_9 clock__L2_N0_13 4.000000
+R31_0 clock__L2_N0_8 result_reg\[0\]:CK 4.000000
+R32_0 clock__L2_N0_7 clock__L2_N0_11 1.680000
+R33_0 clock__L2_N0_6 clock__L2_N0_10 1.680000
+R34_0 clock__L2_N0_6 clock__L2_N0_9 4.000000
+R35_0 clock__L2_N0_4 clock__L2_N0_8 4.000000
+R36_0 clock__L2_N0_4 clock__L2_N0_7 4.000000
+R37_0 clock__L2_N0_3 clock__L2_N0_6 4.200000
+R38_0 clock__L2_N0_2 result_reg\[1\]:CK 4.000000
+R39_0 clock__L2_N0_1 clock__L2_N0_4 3.150000
+R40_0 clock__L2_N0_1 clock__L2_N0_3 4.000000
+R41_0 clock__L2_N0_0 clock__L2_N0_2 4.000000
+R42_0 clock__L2_N0_0 clock__L2_N0_1 0.420000
+
+*|NET clock__L1_N0 0.000465PF
+*|I (clock__L1_I0:O clock__L1_I0 O O 0.000000PF 17.780 14.560)
+*|I (clock__L2_I0:I clock__L2_I0 I I 0.029287PF 15.260 12.320)
+*|S (clock__L1_N0_1 17.780 14.560)
+*|S (clock__L1_N0_2 17.780 14.560)
+*|S (clock__L1_N0_3 15.260 14.560)
+*|S (clock__L1_N0_4 15.260 14.560)
+*|S (clock__L1_N0_5 15.260 12.320)
+*|S (clock__L1_N0_6 15.260 12.320)
+*|S (clock__L1_N0_7 15.260 12.320)
+C1_1 clock__L1_N0_2 0 0.000124PF
+C2_1 clock__L1_N0_3 0 0.000124PF
+C3_1 clock__L1_N0_4 0 0.000109PF
+C4_1 clock__L1_N0_5 0 0.000109PF
+R1_1 clock__L1_N0_7 clock__L2_I0:I 4.000000
+R2_1 clock__L1_N0_6 clock__L1_N0_7 4.000000
+R3_1 clock__L1_N0_5 clock__L1_N0_6 4.000000
+R4_1 clock__L1_N0_4 clock__L1_N0_5 1.680000
+R5_1 clock__L1_N0_3 clock__L1_N0_4 4.000000
+R6_1 clock__L1_N0_2 clock__L1_N0_3 1.890000
+R7_1 clock__L1_N0_1 clock__L1_N0_2 4.000000
+R8_1 clock__L1_I0:O clock__L1_N0_1 4.000000
+
+*|NET clock 0.000711PF
+*|P (clock I 0.000000PF 31.500 14.280)
+*|I (clock__L1_I0:I clock__L1_I0 I I 0.036553PF 24.500 14.560)
+*|S (clock_1 24.500 14.280)
+*|S (clock_2 24.500 14.280)
+*|S (clock_3 24.500 14.560)
+C1_2 clock 0 0.000342PF
+C2_2 clock_1 0 0.000342PF
+C3_2 clock_2 0 0.000014PF
+C4_2 clock_3 0 0.000014PF
+R1_2 clock_3 clock__L1_I0:I 4.000000
+R2_2 clock_2 clock_3 0.210000
+R3_2 clock_1 clock_2 4.000000
+R4_2 clock clock_1 5.250000
+
+*|NET reset 0.005183PF
+*|P (reset I 0.000000PF 17.220 0.280)
+*|I (g434:EB g434 EB I 0.002389PF 23.380 6.720)
+*|I (g451:EB g451 EB I 0.002389PF 23.940 20.160)
+*|I (g448:EB g448 EB I 0.002389PF 22.540 20.160)
+*|I (g436:EB g436 EB I 0.002389PF 16.940 8.960)
+*|I (g439:EB g439 EB I 0.002389PF 12.460 6.720)
+*|I (g442:EB g442 EB I 0.002389PF 11.620 14.840)
+*|I (g454:EB g454 EB I 0.002389PF 13.580 20.440)
+*|I (g445:EB g445 EB I 0.002389PF 10.780 20.440)
+*|S (reset_0 23.100 7.280)
+*|S (reset_1 23.100 7.280)
+*|S (reset_2 23.100 6.720)
+*|S (reset_3 23.100 7.280)
+*|S (reset_4 17.220 7.280)
+*|S (reset_5 23.100 6.720)
+*|S (reset_6 23.100 20.160)
+*|S (reset_7 17.220 7.280)
+*|S (reset_9 23.100 20.160)
+*|S (reset_10 17.220 8.680)
+*|S (reset_11 17.220 5.600)
+*|S (reset_12 23.940 20.160)
+*|S (reset_13 22.540 20.160)
+*|S (reset_14 17.220 8.680)
+*|S (reset_15 17.220 5.600)
+*|S (reset_16 23.940 20.160)
+*|S (reset_17 22.540 20.160)
+*|S (reset_18 16.660 8.680)
+*|S (reset_19 17.220 5.600)
+*|S (reset_22 16.660 8.680)
+*|S (reset_23 12.180 8.680)
+*|S (reset_25 16.660 8.960)
+*|S (reset_26 12.180 8.680)
+*|S (reset_27 16.660 8.960)
+*|S (reset_28 12.180 8.960)
+*|S (reset_29 12.180 6.720)
+*|S (reset_31 11.900 8.960)
+*|S (reset_32 12.180 6.720)
+*|S (reset_33 11.900 15.680)
+*|S (reset_35 11.900 20.440)
+*|S (reset_36 11.620 15.680)
+*|S (reset_37 11.900 20.440)
+*|S (reset_38 11.620 14.840)
+*|S (reset_39 13.580 20.440)
+*|S (reset_40 10.780 20.440)
+*|S (reset_42 13.580 20.440)
+*|S (reset_43 10.780 20.440)
+C1_3 reset_0 0 0.000027PF
+C2_3 reset_1 0 0.000289PF
+C3_3 reset_2 0 0.000027PF
+C4_3 reset_3 0 0.000625PF
+C5_3 reset_4 0 0.000289PF
+C6_3 reset_5 0 0.000013PF
+C7_3 reset_6 0 0.000625PF
+C8_3 reset_7 0 0.000149PF
+C9_3 g434:EB 0 0.000013PF
+C10_3 reset_9 0 0.000069PF
+C11_3 reset_10 0 0.000068PF
+C12_3 reset_11 0 0.000081PF
+C13_3 reset_12 0 0.000041PF
+C14_3 reset_13 0 0.000028PF
+C15_3 reset_14 0 0.000028PF
+C16_3 reset_18 0 0.000248PF
+C17_3 reset_19 0 0.000259PF
+C18_3 reset_22 0 0.000014PF
+C19_3 reset_23 0 0.000220PF
+C20_3 reset 0 0.000259PF
+C21_3 reset_25 0 0.000014PF
+C22_3 reset_26 0 0.000109PF
+C23_3 reset_27 0 0.000013PF
+C24_3 reset_28 0 0.000027PF
+C25_3 reset_29 0 0.000095PF
+C26_3 g436:EB 0 0.000013PF
+C27_3 reset_31 0 0.000341PF
+C28_3 reset_32 0 0.000013PF
+C29_3 reset_33 0 0.000572PF
+C30_3 g439:EB 0 0.000013PF
+C31_3 reset_35 0 0.000232PF
+C32_3 reset_36 0 0.000055PF
+C33_3 reset_37 0 0.000138PF
+C34_3 reset_38 0 0.000041PF
+C35_3 reset_39 0 0.000083PF
+C36_3 reset_40 0 0.000055PF
+R1_3 reset_43 g445:EB 4.000000
+R2_3 reset_42 g454:EB 4.000000
+R3_3 reset_40 reset_43 4.000000
+R4_3 reset_39 reset_42 4.000000
+R5_3 reset_38 g442:EB 4.000000
+R6_3 reset_37 reset_40 0.840000
+R7_3 reset_37 reset_39 1.260000
+R8_3 reset_36 reset_38 0.630000
+R9_3 reset_35 reset_37 4.000000
+R10_3 reset_33 reset_36 0.210000
+R11_3 reset_33 reset_35 3.570000
+R12_3 reset_32 g439:EB 0.268333
+R13_3 reset_31 reset_33 5.040000
+R14_3 reset_29 reset_32 4.000000
+R15_3 reset_28 reset_31 0.210000
+R16_3 reset_27 g436:EB 0.268333
+R17_3 reset_26 reset_29 1.470000
+R18_3 reset_26 reset_28 0.210000
+R19_3 reset_25 reset_27 4.000000
+R20_3 reset_23 reset_26 4.000000
+R21_3 reset_22 reset_25 0.210000
+R22_3 reset_19 reset 3.990000
+R23_3 reset_18 reset_23 3.360000
+R24_3 reset_18 reset_22 4.000000
+R25_3 reset_17 g448:EB 4.000000
+R26_3 reset_16 g451:EB 4.000000
+R27_3 reset_15 reset_19 4.000000
+R28_3 reset_14 reset_18 0.420000
+R29_3 reset_13 reset_17 4.000000
+R30_3 reset_12 reset_16 4.000000
+R31_3 reset_11 reset_15 4.000000
+R32_3 reset_10 reset_14 4.000000
+R33_3 reset_9 reset_13 0.420000
+R34_3 reset_9 reset_12 0.630000
+R35_3 reset_7 reset_11 1.260000
+R36_3 reset_7 reset_10 1.050000
+R37_3 reset_6 reset_9 4.000000
+R38_3 reset_5 g434:EB 0.268333
+R39_3 reset_4 reset_7 4.000000
+R40_3 reset_3 reset_6 9.660000
+R41_3 reset_2 reset_5 4.000000
+R42_3 reset_1 reset_4 4.410000
+R43_3 reset_1 reset_3 4.000000
+R44_3 reset_0 reset_2 0.420000
+R45_3 reset_0 reset_1 4.000000
+
+*|NET lefthand[7] 0.000735PF
+*|P (lefthand[7] I 0.000000PF 31.500 8.960)
+*|I (g468:A1 g468 A1 I 0.002698PF 24.500 8.960)
+*|I (g468:B2 g468 B2 I 0.001465PF 23.940 9.240)
+*|S (lefthand[7]_1 24.500 8.960)
+*|S (lefthand[7]_2 24.500 8.960)
+C1_4 lefthand[7] 0 0.000342PF
+C2_4 lefthand[7]_1 0 0.000342PF
+C3_4 g468:A1 0 0.000026PF
+C4_4 g468:B2 0 0.000026PF
+R1_4 g468:A1 g468:B2 0.536667
+R2_4 lefthand[7]_2 g468:A1 4.000000
+R3_4 lefthand[7]_1 lefthand[7]_2 4.000000
+R4_4 lefthand[7] lefthand[7]_1 5.250000
+
+*|NET lefthand[6] 0.000709PF
+*|P (lefthand[6] I 0.000000PF 19.740 0.280)
+*|I (g473:I1 g473 I1 I 0.001608PF 19.740 6.720)
+*|I (g474:I1 g474 I1 I 0.002218PF 20.580 6.440)
+*|S (lefthand[6]_0 19.740 6.720)
+*|S (lefthand[6]_1 19.740 6.440)
+*|S (lefthand[6]_3 19.740 6.440)
+*|S (lefthand[6]_5 20.580 6.440)
+*|S (lefthand[6]_6 20.580 6.440)
+C1_5 lefthand[6]_0 0 0.000014PF
+C2_5 lefthand[6]_1 0 0.000313PF
+C3_5 lefthand[6]_3 0 0.000041PF
+C4_5 lefthand[6] 0 0.000300PF
+C5_5 lefthand[6]_5 0 0.000041PF
+R1_5 lefthand[6]_6 g474:I1 4.000000
+R2_5 lefthand[6]_5 lefthand[6]_6 4.000000
+R3_5 lefthand[6]_3 lefthand[6]_5 0.630000
+R4_5 lefthand[6]_1 lefthand[6] 4.620000
+R5_5 lefthand[6]_1 lefthand[6]_3 4.000000
+R6_5 lefthand[6]_0 g473:I1 4.000000
+R7_5 lefthand[6]_0 lefthand[6]_1 0.210000
+
+*|NET lefthand[5] 0.000660PF
+*|P (lefthand[5] I 0.000000PF 0.420 6.720)
+*|I (g478:I1 g478 I1 I 0.001608PF 6.860 6.720)
+*|I (g481:I1 g481 I1 I 0.002218PF 6.020 6.440)
+*|S (lefthand[5]_0 6.860 6.720)
+*|S (lefthand[5]_1 6.020 6.720)
+*|S (lefthand[5]_2 6.860 6.720)
+*|S (lefthand[5]_3 6.020 6.720)
+*|S (lefthand[5]_6 6.020 6.440)
+C1_6 lefthand[5]_0 0 0.000041PF
+C2_6 lefthand[5]_1 0 0.000316PF
+C3_6 lefthand[5]_3 0 0.000014PF
+C4_6 lefthand[5] 0 0.000275PF
+C5_6 lefthand[5]_6 0 0.000014PF
+R1_6 lefthand[5]_6 g481:I1 4.000000
+R2_6 lefthand[5]_3 lefthand[5]_6 0.210000
+R3_6 lefthand[5]_2 g478:I1 4.000000
+R4_6 lefthand[5]_1 lefthand[5] 4.200000
+R5_6 lefthand[5]_1 lefthand[5]_3 4.000000
+R6_6 lefthand[5]_0 lefthand[5]_2 4.000000
+R7_6 lefthand[5]_0 lefthand[5]_1 0.630000
+
+*|NET lefthand[4] 0.000840PF
+*|P (lefthand[4] I 0.000000PF 0.420 8.960)
+*|I (g470:I1 g470 I1 I 0.001608PF 5.460 8.960)
+*|I (g476:I1 g476 I1 I 0.002218PF 8.820 9.240)
+*|S (lefthand[4]_1 3.220 8.960)
+*|S (lefthand[4]_2 3.220 8.960)
+*|S (lefthand[4]_3 3.220 8.960)
+*|S (lefthand[4]_5 5.460 8.960)
+*|S (lefthand[4]_6 5.460 8.960)
+*|S (lefthand[4]_7 8.820 8.960)
+*|S (lefthand[4]_8 8.820 8.960)
+*|S (lefthand[4]_9 8.820 9.240)
+C1_7 lefthand[4] 0 0.000138PF
+C2_7 lefthand[4]_1 0 0.000138PF
+C3_7 lefthand[4]_3 0 0.000104PF
+C4_7 g470:I1 0 0.000104PF
+C5_7 lefthand[4]_6 0 0.000165PF
+C6_7 lefthand[4]_7 0 0.000165PF
+C7_7 lefthand[4]_8 0 0.000014PF
+C8_7 lefthand[4]_9 0 0.000014PF
+R1_7 lefthand[4]_9 g476:I1 4.000000
+R2_7 lefthand[4]_8 lefthand[4]_9 0.210000
+R3_7 lefthand[4]_7 lefthand[4]_8 4.000000
+R4_7 lefthand[4]_6 lefthand[4]_7 2.520000
+R5_7 lefthand[4]_5 lefthand[4]_6 4.000000
+R6_7 g470:I1 lefthand[4]_5 4.000000
+R7_7 lefthand[4]_3 g470:I1 2.146667
+R8_7 lefthand[4]_2 lefthand[4]_3 4.000000
+R9_7 lefthand[4]_1 lefthand[4]_2 4.000000
+R10_7 lefthand[4] lefthand[4]_1 2.100000
+
+*|NET lefthand[3] 0.000876PF
+*|P (lefthand[3] I 0.000000PF 0.420 13.440)
+*|I (g480:I1 g480 I1 I 0.001608PF 5.460 14.560)
+*|I (g477:I1 g477 I1 I 0.002218PF 6.020 12.040)
+*|S (lefthand[3]_0 5.460 14.560)
+*|S (lefthand[3]_2 5.460 13.440)
+*|S (lefthand[3]_3 0.420 14.560)
+*|S (lefthand[3]_4 5.460 13.440)
+*|S (lefthand[3]_5 0.420 14.560)
+*|S (lefthand[3]_6 6.020 13.440)
+*|S (lefthand[3]_7 0.420 13.440)
+*|S (lefthand[3]_8 6.020 13.440)
+*|S (lefthand[3]_10 6.020 12.040)
+C1_8 lefthand[3]_0 0 0.000055PF
+C2_8 g480:I1 0 0.000233PF
+C3_8 lefthand[3]_2 0 0.000055PF
+C4_8 lefthand[3]_3 0 0.000233PF
+C5_8 lefthand[3]_4 0 0.000028PF
+C6_8 lefthand[3]_5 0 0.000055PF
+C7_8 lefthand[3]_6 0 0.000028PF
+C8_8 lefthand[3]_7 0 0.000055PF
+C9_8 lefthand[3]_8 0 0.000068PF
+C10_8 lefthand[3]_10 0 0.000068PF
+R1_8 lefthand[3]_10 g477:I1 4.000000
+R2_8 lefthand[3]_8 lefthand[3]_10 1.050000
+R3_8 lefthand[3]_7 lefthand[3] 4.000000
+R4_8 lefthand[3]_6 lefthand[3]_8 4.000000
+R5_8 lefthand[3]_5 lefthand[3]_7 0.840000
+R6_8 lefthand[3]_4 lefthand[3]_6 0.420000
+R7_8 lefthand[3]_3 lefthand[3]_5 4.000000
+R8_8 lefthand[3]_2 lefthand[3]_4 4.000000
+R9_8 g480:I1 lefthand[3]_3 4.830000
+R10_8 lefthand[3]_0 lefthand[3]_2 0.840000
+R11_8 lefthand[3]_0 g480:I1 4.000000
+
+*|NET lefthand[2] 0.002054PF
+*|P (lefthand[2] I 0.000000PF 31.500 14.840)
+*|I (g475:I1 g475 I1 I 0.002218PF 17.220 17.640)
+*|I (g469:I1 g469 I1 I 0.001608PF 15.820 20.160)
+*|S (lefthand[2]_0 17.220 19.600)
+*|S (lefthand[2]_1 17.220 17.640)
+*|S (lefthand[2]_2 17.220 19.600)
+*|S (lefthand[2]_4 17.220 14.840)
+*|S (lefthand[2]_5 15.820 19.600)
+*|S (lefthand[2]_6 17.220 14.840)
+*|S (lefthand[2]_7 15.820 19.600)
+*|S (lefthand[2]_9 15.820 20.160)
+C1_9 lefthand[2]_0 0 0.000095PF
+C2_9 lefthand[2]_1 0 0.000232PF
+C3_9 lefthand[2]_2 0 0.000069PF
+C4_9 lefthand[2]_4 0 0.000136PF
+C5_9 lefthand[2]_5 0 0.000069PF
+C6_9 lefthand[2]_6 0 0.000699PF
+C7_9 lefthand[2]_7 0 0.000027PF
+C8_9 lefthand[2] 0 0.000699PF
+C9_9 lefthand[2]_9 0 0.000027PF
+R1_9 lefthand[2]_9 g469:I1 4.000000
+R2_9 lefthand[2]_7 lefthand[2]_9 0.420000
+R3_9 lefthand[2]_6 lefthand[2] 10.710000
+R4_9 lefthand[2]_5 lefthand[2]_7 4.000000
+R5_9 lefthand[2]_4 lefthand[2]_6 4.000000
+R6_9 lefthand[2]_2 lefthand[2]_5 1.050000
+R7_9 lefthand[2]_1 lefthand[2]_4 2.100000
+R8_9 lefthand[2]_1 g475:I1 4.000000
+R9_9 lefthand[2]_0 lefthand[2]_2 4.000000
+R10_9 lefthand[2]_0 lefthand[2]_1 1.470000
+
+*|NET lefthand[1] 0.000899PF
+*|P (lefthand[1] I 0.000000PF 19.180 29.400)
+*|I (g472:I1 g472 I1 I 0.002727PF 18.900 22.960)
+*|I (g479:I1 g479 I1 I 0.002336PF 18.900 20.440)
+*|S (lefthand[1]_1 18.900 22.960)
+*|S (lefthand[1]_2 18.900 26.040)
+*|S (lefthand[1]_3 18.900 20.440)
+*|S (lefthand[1]_4 19.180 26.040)
+C1_10 lefthand[1]_1 0 0.000273PF
+C2_10 lefthand[1]_2 0 0.000164PF
+C3_10 lefthand[1]_3 0 0.000123PF
+C4_10 lefthand[1]_4 0 0.000177PF
+C5_10 lefthand[1] 0 0.000163PF
+R1_10 lefthand[1]_4 lefthand[1] 2.520000
+R2_10 lefthand[1]_3 g479:I1 4.000000
+R3_10 lefthand[1]_2 lefthand[1]_4 0.210000
+R4_10 lefthand[1]_1 lefthand[1]_3 1.890000
+R5_10 lefthand[1]_1 lefthand[1]_2 2.310000
+R6_10 g472:I1 lefthand[1]_1 4.000000
+
+*|NET lefthand[0] 0.001142PF
+*|P (lefthand[0] I 0.000000PF 16.660 29.400)
+*|I (g471:I1 g471 I1 I 0.002336PF 17.500 23.240)
+*|I (g454:S g454 S I 0.002852PF 15.260 20.720)
+*|S (lefthand[0]_0 17.500 22.400)
+*|S (lefthand[0]_1 17.500 23.240)
+*|S (lefthand[0]_2 17.220 22.400)
+*|S (lefthand[0]_3 17.500 29.120)
+*|S (lefthand[0]_5 17.220 21.000)
+*|S (lefthand[0]_6 17.500 29.120)
+*|S (lefthand[0]_7 17.220 21.000)
+*|S (lefthand[0]_8 16.660 29.120)
+*|S (lefthand[0]_9 15.260 21.000)
+*|S (lefthand[0]_10 16.660 29.120)
+*|S (lefthand[0]_11 15.260 21.000)
+*|S (lefthand[0]_13 15.260 20.720)
+C1_11 lefthand[0]_0 0 0.000055PF
+C2_11 lefthand[0]_1 0 0.000327PF
+C3_11 lefthand[0]_2 0 0.000082PF
+C4_11 lefthand[0]_3 0 0.000286PF
+C5_11 lefthand[0]_5 0 0.000068PF
+C6_11 lefthand[0]_6 0 0.000039PF
+C7_11 lefthand[0]_7 0 0.000096PF
+C8_11 lefthand[0]_8 0 0.000039PF
+C9_11 lefthand[0]_9 0 0.000096PF
+C10_11 lefthand[0]_10 0 0.000014PF
+C11_11 lefthand[0]_11 0 0.000014PF
+C12_11 lefthand[0] 0 0.000014PF
+C13_11 lefthand[0]_13 0 0.000014PF
+R1_11 lefthand[0]_13 g454:S 4.000000
+R2_11 lefthand[0]_11 lefthand[0]_13 0.210000
+R3_11 lefthand[0]_10 lefthand[0] 0.210000
+R4_11 lefthand[0]_9 lefthand[0]_11 4.000000
+R5_11 lefthand[0]_8 lefthand[0]_10 4.000000
+R6_11 lefthand[0]_7 lefthand[0]_9 1.470000
+R7_11 lefthand[0]_6 lefthand[0]_8 0.805000
+R8_11 lefthand[0]_5 lefthand[0]_7 4.000000
+R9_11 lefthand[0]_3 lefthand[0]_6 4.000000
+R10_11 lefthand[0]_2 lefthand[0]_5 1.050000
+R11_11 lefthand[0]_1 g471:I1 4.000000
+R12_11 lefthand[0]_1 lefthand[0]_3 4.410000
+R13_11 lefthand[0]_0 lefthand[0]_2 0.210000
+R14_11 lefthand[0]_0 lefthand[0]_1 0.630000
+
+*|NET righthand[7] 0.000871PF
+*|P (righthand[7] I 0.000000PF 31.500 8.960)
+*|I (g468:A2 g468 A2 I 0.002820PF 25.060 8.960)
+*|I (g468:B1 g468 B1 I 0.001806PF 23.380 8.960)
+*|S (righthand[7]_0 25.060 8.680)
+*|S (righthand[7]_1 25.060 8.960)
+*|S (righthand[7]_2 25.060 8.680)
+*|S (righthand[7]_4 25.060 8.680)
+*|S (righthand[7]_5 23.380 8.680)
+*|S (righthand[7]_6 25.060 8.960)
+*|S (righthand[7]_7 23.380 8.680)
+*|S (righthand[7]_8 25.060 8.960)
+*|S (righthand[7]_9 23.380 8.960)
+C1_12 righthand[7]_0 0 0.000014PF
+C2_12 righthand[7]_1 0 0.000014PF
+C3_12 righthand[7]_2 0 0.000083PF
+C4_12 righthand[7]_4 0 0.000014PF
+C5_12 righthand[7]_5 0 0.000083PF
+C6_12 righthand[7]_6 0 0.000014PF
+C7_12 righthand[7]_7 0 0.000014PF
+C8_12 righthand[7]_8 0 0.000312PF
+C9_12 righthand[7]_9 0 0.000014PF
+C10_12 righthand[7] 0 0.000312PF
+R1_12 righthand[7]_9 g468:B1 4.000000
+R2_12 righthand[7]_8 righthand[7] 4.830000
+R3_12 righthand[7]_7 righthand[7]_9 0.210000
+R4_12 righthand[7]_6 righthand[7]_8 4.000000
+R5_12 righthand[7]_5 righthand[7]_7 4.000000
+R6_12 righthand[7]_4 righthand[7]_6 0.210000
+R7_12 righthand[7]_2 righthand[7]_5 1.260000
+R8_12 righthand[7]_2 righthand[7]_4 4.000000
+R9_12 righthand[7]_1 g468:A2 4.000000
+R10_12 righthand[7]_0 righthand[7]_2 4.000000
+R11_12 righthand[7]_0 righthand[7]_1 0.210000
+
+*|NET righthand[6] 0.000709PF
+*|P (righthand[6] I 0.000000PF 19.180 0.280)
+*|I (g473:I2 g473 I2 I 0.001942PF 19.180 6.440)
+*|I (g474:I2 g474 I2 I 0.001763PF 20.020 6.440)
+*|S (righthand[6]_0 19.180 6.440)
+*|S (righthand[6]_1 19.180 6.160)
+*|S (righthand[6]_3 19.180 6.160)
+*|S (righthand[6]_5 20.020 6.160)
+*|S (righthand[6]_6 20.020 6.160)
+*|S (righthand[6]_7 20.020 6.440)
+C1_13 righthand[6]_0 0 0.000014PF
+C2_13 righthand[6]_1 0 0.000300PF
+C3_13 righthand[6]_3 0 0.000041PF
+C4_13 righthand[6] 0 0.000286PF
+C5_13 righthand[6]_5 0 0.000041PF
+C6_13 righthand[6]_6 0 0.000014PF
+C7_13 righthand[6]_7 0 0.000014PF
+R1_13 righthand[6]_7 g474:I2 4.000000
+R2_13 righthand[6]_6 righthand[6]_7 0.210000
+R3_13 righthand[6]_5 righthand[6]_6 4.000000
+R4_13 righthand[6]_3 righthand[6]_5 0.630000
+R5_13 righthand[6]_1 righthand[6] 4.410000
+R6_13 righthand[6]_1 righthand[6]_3 4.000000
+R7_13 righthand[6]_0 g473:I2 4.000000
+R8_13 righthand[6]_0 righthand[6]_1 0.210000
+
+*|NET righthand[5] 0.000761PF
+*|P (righthand[5] I 0.000000PF 0.420 6.720)
+*|I (g478:I2 g478 I2 I 0.001942PF 7.420 6.440)
+*|I (g481:I2 g481 I2 I 0.001763PF 5.460 6.440)
+*|S (righthand[5]_0 7.420 6.440)
+*|S (righthand[5]_1 4.900 6.440)
+*|S (righthand[5]_2 7.420 6.440)
+*|S (righthand[5]_3 4.900 6.440)
+*|S (righthand[5]_4 4.900 6.440)
+*|S (righthand[5]_6 4.900 6.440)
+*|S (righthand[5]_7 4.900 6.720)
+*|S (righthand[5]_9 4.900 6.720)
+C1_14 righthand[5]_0 0 0.000124PF
+C2_14 righthand[5]_1 0 0.000124PF
+C3_14 righthand[5]_4 0 0.000014PF
+C4_14 righthand[5]_6 0 0.000026PF
+C5_14 righthand[5]_7 0 0.000014PF
+C6_14 g481:I2 0 0.000026PF
+C7_14 righthand[5]_9 0 0.000217PF
+C8_14 righthand[5] 0 0.000217PF
+R1_14 righthand[5]_9 righthand[5] 3.360000
+R2_14 righthand[5]_7 righthand[5]_9 4.000000
+R3_14 righthand[5]_6 g481:I2 0.536667
+R4_14 righthand[5]_4 righthand[5]_7 0.210000
+R5_14 righthand[5]_3 righthand[5]_6 4.000000
+R6_14 righthand[5]_2 g478:I2 4.000000
+R7_14 righthand[5]_1 righthand[5]_4 4.000000
+R8_14 righthand[5]_1 righthand[5]_3 4.000000
+R9_14 righthand[5]_0 righthand[5]_2 4.000000
+R10_14 righthand[5]_0 righthand[5]_1 1.890000
+
+*|NET righthand[4] 0.000793PF
+*|P (righthand[4] I 0.000000PF 0.420 8.960)
+*|I (g470:I2 g470 I2 I 0.001942PF 6.020 9.240)
+*|I (g476:I2 g476 I2 I 0.001763PF 8.260 9.240)
+*|S (righthand[4]_0 6.020 9.240)
+*|S (righthand[4]_1 6.020 9.240)
+*|S (righthand[4]_3 8.260 9.240)
+*|S (righthand[4]_4 3.780 9.240)
+*|S (righthand[4]_5 8.260 9.240)
+*|S (righthand[4]_6 3.780 9.240)
+*|S (righthand[4]_8 3.780 8.960)
+*|S (righthand[4]_9 3.780 8.960)
+C1_15 righthand[4]_1 0 0.000220PF
+C2_15 righthand[4]_3 0 0.000110PF
+C3_15 righthand[4]_4 0 0.000110PF
+C4_15 righthand[4]_6 0 0.000014PF
+C5_15 righthand[4]_8 0 0.000014PF
+C6_15 righthand[4]_9 0 0.000163PF
+C7_15 righthand[4] 0 0.000163PF
+R1_15 righthand[4]_9 righthand[4] 2.520000
+R2_15 righthand[4]_8 righthand[4]_9 4.000000
+R3_15 righthand[4]_6 righthand[4]_8 0.210000
+R4_15 righthand[4]_5 g476:I2 4.000000
+R5_15 righthand[4]_4 righthand[4]_6 4.000000
+R6_15 righthand[4]_3 righthand[4]_5 4.000000
+R7_15 righthand[4]_1 righthand[4]_4 1.680000
+R8_15 righthand[4]_1 righthand[4]_3 1.680000
+R9_15 righthand[4]_0 g470:I2 4.000000
+R10_15 righthand[4]_0 righthand[4]_1 4.000000
+
+*|NET righthand[3] 0.000880PF
+*|P (righthand[3] I 0.000000PF 0.420 13.440)
+*|I (g477:I2 g477 I2 I 0.001763PF 5.460 12.320)
+*|I (g480:I2 g480 I2 I 0.001942PF 6.020 14.560)
+*|S (righthand[3]_1 5.180 12.320)
+*|S (righthand[3]_2 5.180 12.320)
+*|S (righthand[3]_3 1.260 12.320)
+*|S (righthand[3]_4 5.180 14.000)
+*|S (righthand[3]_5 1.260 12.320)
+*|S (righthand[3]_6 5.180 14.000)
+*|S (righthand[3]_7 1.260 13.160)
+*|S (righthand[3]_8 6.020 14.000)
+*|S (righthand[3]_9 1.260 13.160)
+*|S (righthand[3]_10 6.020 14.000)
+*|S (righthand[3]_11 1.260 13.160)
+*|S (righthand[3]_12 6.020 14.560)
+*|S (righthand[3]_13 1.260 13.440)
+*|S (righthand[3]_15 1.260 13.440)
+C1_16 g477:I2 0 0.000013PF
+C2_16 righthand[3]_1 0 0.000195PF
+C3_16 righthand[3]_2 0 0.000082PF
+C4_16 righthand[3]_3 0 0.000182PF
+C5_16 righthand[3]_4 0 0.000082PF
+C6_16 righthand[3]_5 0 0.000041PF
+C7_16 righthand[3]_6 0 0.000041PF
+C8_16 righthand[3]_7 0 0.000041PF
+C9_16 righthand[3]_8 0 0.000041PF
+C10_16 righthand[3]_10 0 0.000027PF
+C11_16 righthand[3]_11 0 0.000014PF
+C12_16 righthand[3]_12 0 0.000027PF
+C13_16 righthand[3]_13 0 0.000014PF
+C14_16 righthand[3]_15 0 0.000041PF
+C15_16 righthand[3] 0 0.000041PF
+R1_16 righthand[3]_15 righthand[3] 0.630000
+R2_16 righthand[3]_13 righthand[3]_15 4.000000
+R3_16 righthand[3]_12 g480:I2 4.000000
+R4_16 righthand[3]_11 righthand[3]_13 0.210000
+R5_16 righthand[3]_10 righthand[3]_12 0.420000
+R6_16 righthand[3]_9 righthand[3]_11 4.000000
+R7_16 righthand[3]_8 righthand[3]_10 4.000000
+R8_16 righthand[3]_7 righthand[3]_9 4.000000
+R9_16 righthand[3]_6 righthand[3]_8 0.630000
+R10_16 righthand[3]_5 righthand[3]_7 0.630000
+R11_16 righthand[3]_4 righthand[3]_6 4.000000
+R12_16 righthand[3]_3 righthand[3]_5 4.000000
+R13_16 righthand[3]_2 righthand[3]_4 1.260000
+R14_16 righthand[3]_1 righthand[3]_3 3.756667
+R15_16 righthand[3]_1 righthand[3]_2 4.000000
+R16_16 g477:I2 righthand[3]_1 0.268333
+
+*|NET righthand[2] 0.002036PF
+*|P (righthand[2] I 0.000000PF 31.500 14.560)
+*|I (g475:I2 g475 I2 I 0.001763PF 16.660 17.640)
+*|I (g469:I2 g469 I2 I 0.001942PF 16.380 20.160)
+*|S (righthand[2]_1 16.660 14.560)
+*|S (righthand[2]_2 16.660 14.560)
+*|S (righthand[2]_3 16.660 15.680)
+*|S (righthand[2]_4 16.660 15.680)
+*|S (righthand[2]_5 16.660 15.680)
+*|S (righthand[2]_6 16.660 17.640)
+*|S (righthand[2]_8 16.100 17.920)
+*|S (righthand[2]_9 16.100 17.920)
+*|S (righthand[2]_10 16.100 19.600)
+*|S (righthand[2]_11 16.380 19.600)
+*|S (righthand[2]_12 16.380 20.160)
+C1_17 righthand[2] 0 0.000720PF
+C2_17 righthand[2]_1 0 0.000720PF
+C3_17 righthand[2]_2 0 0.000054PF
+C4_17 righthand[2]_3 0 0.000054PF
+C5_17 righthand[2]_5 0 0.000095PF
+C6_17 righthand[2]_6 0 0.000095PF
+C7_17 g475:I2 0 0.000026PF
+C8_17 righthand[2]_8 0 0.000026PF
+C9_17 righthand[2]_9 0 0.000082PF
+C10_17 righthand[2]_10 0 0.000095PF
+C11_17 righthand[2]_11 0 0.000041PF
+C12_17 righthand[2]_12 0 0.000027PF
+R1_17 righthand[2]_12 g469:I2 4.000000
+R2_17 righthand[2]_11 righthand[2]_12 0.420000
+R3_17 righthand[2]_10 righthand[2]_11 0.210000
+R4_17 righthand[2]_9 righthand[2]_10 1.260000
+R5_17 righthand[2]_8 righthand[2]_9 4.000000
+R6_17 g475:I2 righthand[2]_8 0.536667
+R7_17 righthand[2]_6 g475:I2 4.000000
+R8_17 righthand[2]_5 righthand[2]_6 1.470000
+R9_17 righthand[2]_4 righthand[2]_5 4.000000
+R10_17 righthand[2]_3 righthand[2]_4 4.000000
+R11_17 righthand[2]_2 righthand[2]_3 0.840000
+R12_17 righthand[2]_1 righthand[2]_2 4.000000
+R13_17 righthand[2] righthand[2]_1 11.130000
+
+*|NET righthand[1] 0.001091PF
+*|P (righthand[1] I 0.000000PF 19.180 29.400)
+*|I (g472:I2 g472 I2 I 0.002227PF 19.740 23.240)
+*|I (g479:I2 g479 I2 I 0.002770PF 18.060 20.440)
+*|S (righthand[1]_1 19.740 23.240)
+*|S (righthand[1]_2 19.740 29.120)
+*|S (righthand[1]_3 19.740 21.280)
+*|S (righthand[1]_4 19.740 29.120)
+*|S (righthand[1]_5 19.740 21.280)
+*|S (righthand[1]_6 19.180 29.120)
+*|S (righthand[1]_7 18.060 21.280)
+*|S (righthand[1]_8 19.180 29.120)
+*|S (righthand[1]_9 18.060 21.280)
+*|S (righthand[1]_11 18.060 20.440)
+C1_18 righthand[1]_1 0 0.000381PF
+C2_18 righthand[1]_2 0 0.000286PF
+C3_18 righthand[1]_3 0 0.000095PF
+C4_18 righthand[1]_4 0 0.000027PF
+C5_18 righthand[1]_5 0 0.000083PF
+C6_18 righthand[1]_6 0 0.000027PF
+C7_18 righthand[1]_7 0 0.000083PF
+C8_18 righthand[1]_8 0 0.000014PF
+C9_18 righthand[1]_9 0 0.000041PF
+C10_18 righthand[1] 0 0.000014PF
+C11_18 righthand[1]_11 0 0.000041PF
+R1_18 righthand[1]_11 g479:I2 4.000000
+R2_18 righthand[1]_9 righthand[1]_11 0.630000
+R3_18 righthand[1]_8 righthand[1] 0.210000
+R4_18 righthand[1]_7 righthand[1]_9 4.000000
+R5_18 righthand[1]_6 righthand[1]_8 4.000000
+R6_18 righthand[1]_5 righthand[1]_7 1.260000
+R7_18 righthand[1]_4 righthand[1]_6 0.420000
+R8_18 righthand[1]_3 righthand[1]_5 4.000000
+R9_18 righthand[1]_2 righthand[1]_4 4.000000
+R10_18 righthand[1]_1 righthand[1]_3 1.470000
+R11_18 righthand[1]_1 righthand[1]_2 4.410000
+R12_18 g472:I2 righthand[1]_1 4.000000
+
+*|NET righthand[0] 0.001488PF
+*|P (righthand[0] I 0.000000PF 16.100 29.400)
+*|I (g471:I2 g471 I2 I 0.002770PF 16.660 23.240)
+*|I (g454:A g454 A I 0.001994PF 14.140 20.720)
+*|I (g482:I g482 I I 0.002765PF 17.780 20.160)
+*|S (righthand[0]_0 14.140 23.240)
+*|S (righthand[0]_1 16.100 23.240)
+*|S (righthand[0]_2 14.140 23.240)
+*|S (righthand[0]_4 16.100 23.240)
+*|S (righthand[0]_5 14.140 20.720)
+*|S (righthand[0]_6 16.660 23.240)
+*|S (righthand[0]_9 16.660 20.440)
+*|S (righthand[0]_10 16.660 20.440)
+*|S (righthand[0]_11 17.780 20.440)
+*|S (righthand[0]_12 17.780 20.440)
+*|S (righthand[0]_13 17.780 20.160)
+C1_19 righthand[0]_0 0 0.000091PF
+C2_19 righthand[0]_1 0 0.000117PF
+C3_19 righthand[0]_2 0 0.000123PF
+C4_19 g471:I2 0 0.000026PF
+C5_19 righthand[0]_4 0 0.000300PF
+C6_19 righthand[0]_5 0 0.000123PF
+C7_19 righthand[0]_6 0 0.000136PF
+C8_19 righthand[0] 0 0.000300PF
+C9_19 righthand[0]_9 0 0.000136PF
+C10_19 righthand[0]_10 0 0.000055PF
+C11_19 righthand[0]_11 0 0.000055PF
+C12_19 righthand[0]_12 0 0.000014PF
+C13_19 righthand[0]_13 0 0.000014PF
+R1_19 righthand[0]_13 g482:I 4.000000
+R2_19 righthand[0]_12 righthand[0]_13 0.210000
+R3_19 righthand[0]_11 righthand[0]_12 4.000000
+R4_19 righthand[0]_10 righthand[0]_11 0.840000
+R5_19 righthand[0]_9 righthand[0]_10 4.000000
+R6_19 righthand[0]_6 righthand[0]_9 2.100000
+R7_19 righthand[0]_5 g454:A 4.000000
+R8_19 righthand[0]_4 righthand[0] 4.620000
+R9_19 g471:I2 righthand[0]_6 4.000000
+R10_19 righthand[0]_2 righthand[0]_5 1.890000
+R11_19 righthand[0]_1 righthand[0]_4 4.000000
+R12_19 righthand[0]_1 g471:I2 0.536667
+R13_19 righthand[0]_0 righthand[0]_2 4.000000
+R14_19 righthand[0]_0 righthand[0]_1 1.878333
+
+*|NET result[7] 0.000843PF
+*|P (result[7] O 0.000000PF 19.180 0.280)
+*|I (result_reg\[7\]:Q result_reg\[7\] Q O 0.000000PF 19.180 8.960)
+*|S (result[7]_1 19.180 8.960)
+*|S (result[7]_2 19.180 7.000)
+*|S (result[7]_3 19.180 7.000)
+*|S (result[7]_4 19.180 7.000)
+C1_20 result[7]_1 0 0.000095PF
+C2_20 result[7]_2 0 0.000095PF
+C3_20 result[7]_4 0 0.000326PF
+C4_20 result[7] 0 0.000326PF
+R1_20 result[7]_4 result[7] 5.040000
+R2_20 result[7]_3 result[7]_4 4.000000
+R3_20 result[7]_2 result[7]_3 4.000000
+R4_20 result[7]_1 result[7]_2 1.470000
+R5_20 result_reg\[7\]:Q result[7]_1 4.000000
+
+*|NET result[6] 0.001117PF
+*|P (result[6] O 0.000000PF 16.100 0.280)
+*|I (result_reg\[6\]:Q result_reg\[6\] Q O 0.000000PF 16.100 11.760)
+*|S (result[6]_1 16.100 11.760)
+*|S (result[6]_2 16.100 7.000)
+*|S (result[6]_3 16.100 7.000)
+*|S (result[6]_4 16.100 7.000)
+*|S (result[6]_5 16.100 5.880)
+*|S (result[6]_6 16.100 5.880)
+*|S (result[6]_7 16.100 5.880)
+C1_21 result[6]_1 0 0.000232PF
+C2_21 result[6]_2 0 0.000232PF
+C3_21 result[6]_4 0 0.000054PF
+C4_21 result[6]_5 0 0.000054PF
+C5_21 result[6]_7 0 0.000273PF
+C6_21 result[6] 0 0.000273PF
+R1_21 result[6]_7 result[6] 4.200000
+R2_21 result[6]_6 result[6]_7 4.000000
+R3_21 result[6]_5 result[6]_6 4.000000
+R4_21 result[6]_4 result[6]_5 0.840000
+R5_21 result[6]_3 result[6]_4 4.000000
+R6_21 result[6]_2 result[6]_3 4.000000
+R7_21 result[6]_1 result[6]_2 3.570000
+R8_21 result_reg\[6\]:Q result[6]_1 4.000000
+
+*|NET result[5] 0.000899PF
+*|P (result[5] O 0.000000PF 10.500 0.280)
+*|I (result_reg\[5\]:Q result_reg\[5\] Q O 0.000000PF 10.500 8.960)
+*|S (result[5]_1 10.500 8.960)
+*|S (result[5]_2 10.500 8.400)
+*|S (result[5]_3 10.780 8.400)
+*|S (result[5]_4 10.780 7.280)
+*|S (result[5]_5 10.500 7.280)
+C1_22 result[5]_1 0 0.000027PF
+C2_22 result[5]_2 0 0.000041PF
+C3_22 result[5]_3 0 0.000068PF
+C4_22 result[5]_4 0 0.000068PF
+C5_22 result[5]_5 0 0.000354PF
+C6_22 result[5] 0 0.000341PF
+R1_22 result[5]_5 result[5] 5.250000
+R2_22 result[5]_4 result[5]_5 0.210000
+R3_22 result[5]_3 result[5]_4 0.840000
+R4_22 result[5]_2 result[5]_3 0.210000
+R5_22 result[5]_1 result[5]_2 0.420000
+R6_22 result_reg\[5\]:Q result[5]_1 4.000000
+
+*|NET result[4] 0.001319PF
+*|P (result[4] O 0.000000PF 0.420 15.120)
+*|I (result_reg\[4\]:Q result_reg\[4\] Q O 0.000000PF 12.740 14.560)
+*|S (result[4]_1 12.740 14.560)
+*|S (result[4]_2 12.740 14.280)
+*|S (result[4]_3 12.740 14.280)
+*|S (result[4]_4 8.820 14.280)
+*|S (result[4]_5 8.820 14.280)
+*|S (result[4]_6 8.820 15.120)
+*|S (result[4]_7 8.820 15.120)
+C1_23 result[4]_1 0 0.000014PF
+C2_23 result[4]_2 0 0.000014PF
+C3_23 result[4]_3 0 0.000193PF
+C4_23 result[4]_4 0 0.000193PF
+C5_23 result[4]_5 0 0.000041PF
+C6_23 result[4]_6 0 0.000041PF
+C7_23 result[4]_7 0 0.000413PF
+C8_23 result[4] 0 0.000413PF
+R1_23 result[4]_7 result[4] 6.300000
+R2_23 result[4]_6 result[4]_7 4.000000
+R3_23 result[4]_5 result[4]_6 0.630000
+R4_23 result[4]_4 result[4]_5 4.000000
+R5_23 result[4]_3 result[4]_4 2.940000
+R6_23 result[4]_2 result[4]_3 4.000000
+R7_23 result[4]_1 result[4]_2 0.210000
+R8_23 result_reg\[4\]:Q result[4]_1 4.000000
+
+*|NET result[3] 0.000523PF
+*|P (result[3] O 0.000000PF 0.420 20.720)
+*|I (result_reg\[3\]:Q result_reg\[3\] Q O 0.000000PF 5.740 20.720)
+*|S (result[3]_1 5.740 20.720)
+*|S (result[3]_2 5.740 20.720)
+C1_24 result[3]_2 0 0.000261PF
+C2_24 result[3] 0 0.000261PF
+R1_24 result[3]_2 result[3] 3.990000
+R2_24 result[3]_1 result[3]_2 4.000000
+R3_24 result_reg\[3\]:Q result[3]_1 4.000000
+
+*|NET result[2] 0.000986PF
+*|P (result[2] O 0.000000PF 31.500 11.760)
+*|I (result_reg\[2\]:Q result_reg\[2\] Q O 0.000000PF 21.980 11.760)
+*|S (result[2]_1 21.980 11.760)
+*|S (result[2]_2 21.980 11.480)
+*|S (result[2]_3 21.980 11.480)
+*|S (result[2]_4 26.460 11.480)
+*|S (result[2]_5 26.460 11.760)
+C1_25 result[2]_1 0 0.000014PF
+C2_25 result[2]_2 0 0.000014PF
+C3_25 result[2]_3 0 0.000220PF
+C4_25 result[2]_4 0 0.000234PF
+C5_25 result[2]_5 0 0.000259PF
+C6_25 result[2] 0 0.000245PF
+R1_25 result[2]_5 result[2] 3.780000
+R2_25 result[2]_4 result[2]_5 0.210000
+R3_25 result[2]_3 result[2]_4 3.360000
+R4_25 result[2]_2 result[2]_3 4.000000
+R5_25 result[2]_1 result[2]_2 0.210000
+R6_25 result_reg\[2\]:Q result[2]_1 4.000000
+
+*|NET result[1] 0.000656PF
+*|P (result[1] O 0.000000PF 31.500 17.360)
+*|I (result_reg\[1\]:Q result_reg\[1\] Q O 0.000000PF 24.780 17.360)
+*|S (result[1]_1 24.780 17.360)
+*|S (result[1]_2 24.780 17.360)
+C1_26 result[1]_2 0 0.000328PF
+C2_26 result[1] 0 0.000328PF
+R1_26 result[1]_2 result[1] 5.040000
+R2_26 result[1]_1 result[1]_2 4.000000
+R3_26 result_reg\[1\]:Q result[1]_1 4.000000
+
+*|NET result[0] 0.001100PF
+*|P (result[0] O 0.000000PF 0.420 17.360)
+*|I (result_reg\[0\]:Q result_reg\[0\] Q O 0.000000PF 11.620 17.360)
+*|S (result[0]_1 11.620 17.360)
+*|S (result[0]_2 11.620 17.360)
+C1_27 result[0]_2 0 0.000550PF
+C2_27 result[0] 0 0.000550PF
+R1_27 result[0]_2 result[0] 8.400000
+R2_27 result[0]_1 result[0]_2 4.000000
+R3_27 result_reg\[0\]:Q result[0]_1 4.000000
+
+*|NET n_0 0.000220PF
+*|I (g482:O g482 O O 0.000000PF 17.220 20.160)
+*|I (g454:B g454 B I 0.001974PF 14.980 20.160)
+*|S (n_0_1 17.220 20.160)
+*|S (n_0_2 17.220 20.160)
+*|S (n_0_3 14.980 20.160)
+*|S (n_0_4 14.980 20.160)
+C1_28 n_0_2 0 0.000110PF
+C2_28 n_0_3 0 0.000110PF
+R1_28 n_0_4 g454:B 4.000000
+R2_28 n_0_3 n_0_4 4.000000
+R3_28 n_0_2 n_0_3 1.680000
+R4_28 n_0_1 n_0_2 4.000000
+R5_28 g482:O n_0_1 4.000000
+
+*|NET n_1 0.000245PF
+*|I (g455:O g455 O O 0.000000PF 25.620 22.680)
+*|I (g451:B g451 B I 0.001974PF 25.340 20.440)
+*|S (n_1_1 25.620 22.680)
+*|S (n_1_2 25.620 22.120)
+*|S (n_1_3 25.340 22.120)
+*|S (n_1_4 25.340 20.440)
+C1_29 n_1_1 0 0.000027PF
+C2_29 n_1_2 0 0.000041PF
+C3_29 n_1_3 0 0.000095PF
+C4_29 n_1_4 0 0.000082PF
+R1_29 n_1_4 g451:B 4.000000
+R2_29 n_1_3 n_1_4 1.260000
+R3_29 n_1_2 n_1_3 0.210000
+R4_29 n_1_1 n_1_2 0.420000
+R5_29 g455:O n_1_1 4.000000
+
+*|NET n_2 0.000547PF
+*|I (g467:I g467 I I 0.002765PF 25.900 6.440)
+*|I (g434:A g434 A I 0.001994PF 22.820 6.440)
+*|I (g468:O g468 O O 0.000000PF 25.620 8.680)
+*|S (n_2_0 25.900 6.440)
+*|S (n_2_1 25.900 6.440)
+*|S (n_2_2 22.820 6.440)
+*|S (n_2_3 25.900 8.680)
+*|S (n_2_5 22.820 6.440)
+*|S (n_2_6 25.900 8.680)
+C1_30 n_2_0 0 0.000151PF
+C2_30 n_2_1 0 0.000109PF
+C3_30 n_2_2 0 0.000151PF
+C4_30 n_2_3 0 0.000109PF
+C5_30 n_2_6 0 0.000013PF
+C6_30 g468:O 0 0.000013PF
+R1_30 n_2_6 g468:O 0.268333
+R2_30 n_2_5 g434:A 4.000000
+R3_30 n_2_3 n_2_6 4.000000
+R4_30 n_2_2 n_2_5 4.000000
+R5_30 n_2_1 g467:I 4.000000
+R6_30 n_2_1 n_2_3 1.680000
+R7_30 n_2_0 n_2_2 2.310000
+R8_30 n_2_0 n_2_1 4.000000
+
+*|NET n_3 0.000325PF
+*|I (g467:O g467 O O 0.000000PF 25.340 6.720)
+*|I (g434:B g434 B I 0.001974PF 21.980 6.720)
+*|S (n_3_1 24.500 6.720)
+*|S (n_3_2 24.500 6.720)
+*|S (n_3_3 24.500 6.720)
+*|S (n_3_4 21.980 6.720)
+*|S (n_3_5 21.980 6.720)
+C1_31 g467:O 0 0.000039PF
+C2_31 n_3_1 0 0.000039PF
+C3_31 n_3_3 0 0.000124PF
+C4_31 n_3_4 0 0.000124PF
+R1_31 n_3_5 g434:B 4.000000
+R2_31 n_3_4 n_3_5 4.000000
+R3_31 n_3_3 n_3_4 1.890000
+R4_31 n_3_2 n_3_3 4.000000
+R5_31 n_3_1 n_3_2 4.000000
+R6_31 g467:O n_3_1 0.805000
+
+*|NET n_4 0.000491PF
+*|I (g466:B1 g466 B1 I 0.002014PF 7.420 9.520)
+*|I (g444:B2 g444 B2 I 0.001958PF 7.980 12.040)
+*|I (g476:O g476 O O 0.000000PF 9.380 9.520)
+*|S (n_4_0 7.420 10.080)
+*|S (n_4_1 7.700 10.080)
+*|S (n_4_2 7.420 9.520)
+*|S (n_4_3 7.700 12.040)
+*|S (n_4_4 7.420 9.520)
+*|S (n_4_6 7.700 12.040)
+*|S (n_4_7 9.380 9.520)
+*|S (n_4_9 9.380 9.520)
+C1_32 n_4_0 0 0.000041PF
+C2_32 n_4_1 0 0.000109PF
+C3_32 n_4_2 0 0.000027PF
+C4_32 n_4_3 0 0.000095PF
+C5_32 n_4_4 0 0.000096PF
+C6_32 n_4_6 0 0.000013PF
+C7_32 n_4_7 0 0.000096PF
+C8_32 g444:B2 0 0.000013PF
+R1_32 n_4_9 g476:O 4.000000
+R2_32 n_4_7 n_4_9 4.000000
+R3_32 n_4_6 g444:B2 0.268333
+R4_32 n_4_4 n_4_7 1.470000
+R5_32 n_4_3 n_4_6 4.000000
+R6_32 n_4_2 g466:B1 4.000000
+R7_32 n_4_2 n_4_4 4.000000
+R8_32 n_4_1 n_4_3 1.470000
+R9_32 n_4_0 n_4_2 0.420000
+R10_32 n_4_0 n_4_1 0.210000
+
+*|NET n_5 0.000409PF
+*|I (g466:I1 g466 I1 I 0.001182PF 6.860 9.520)
+*|I (g470:O g470 O O 0.000000PF 6.580 9.520)
+*|I (g444:A1 g444 A1 I 0.001925PF 8.260 12.040)
+*|S (n_5_0 6.860 9.520)
+*|S (n_5_1 6.860 9.800)
+*|S (n_5_3 6.860 9.800)
+*|S (n_5_5 8.260 9.800)
+*|S (n_5_6 8.260 9.800)
+*|S (n_5_7 8.260 12.040)
+C1_33 n_5_0 0 0.000014PF
+C2_33 n_5_1 0 0.000014PF
+C3_33 g466:I1 0 0.000013PF
+C4_33 n_5_3 0 0.000069PF
+C5_33 g470:O 0 0.000013PF
+C6_33 n_5_5 0 0.000069PF
+C7_33 n_5_6 0 0.000109PF
+C8_33 n_5_7 0 0.000109PF
+R1_33 n_5_7 g444:A1 4.000000
+R2_33 n_5_6 n_5_7 1.680000
+R3_33 n_5_5 n_5_6 4.000000
+R4_33 n_5_3 n_5_5 1.050000
+R5_33 g466:I1 g470:O 0.268333
+R6_33 n_5_1 n_5_3 4.000000
+R7_33 n_5_0 g466:I1 4.000000
+R8_33 n_5_0 n_5_1 0.210000
+
+*|NET n_6 0.000596PF
+*|I (g447:B2 g447 B2 I 0.001958PF 7.420 14.840)
+*|I (g477:O g477 O O 0.000000PF 6.580 12.600)
+*|I (g464:B1 g464 B1 I 0.002014PF 7.700 17.360)
+*|S (n_6_0 7.140 14.840)
+*|S (n_6_2 7.140 14.840)
+*|S (n_6_3 7.140 15.400)
+*|S (n_6_4 7.140 12.600)
+*|S (n_6_5 7.140 15.400)
+*|S (n_6_6 7.140 12.600)
+*|S (n_6_7 7.700 15.400)
+*|S (n_6_9 7.700 15.400)
+*|S (n_6_10 7.700 17.360)
+C1_34 n_6_0 0 0.000013PF
+C2_34 g447:B2 0 0.000013PF
+C3_34 n_6_2 0 0.000136PF
+C4_34 n_6_3 0 0.000027PF
+C5_34 n_6_4 0 0.000109PF
+C6_34 n_6_5 0 0.000028PF
+C7_34 n_6_6 0 0.000026PF
+C8_34 n_6_7 0 0.000028PF
+C9_34 g477:O 0 0.000026PF
+C10_34 n_6_9 0 0.000095PF
+C11_34 n_6_10 0 0.000095PF
+R1_34 n_6_10 g464:B1 4.000000
+R2_34 n_6_9 n_6_10 1.470000
+R3_34 n_6_7 n_6_9 4.000000
+R4_34 n_6_6 g477:O 0.536667
+R5_34 n_6_5 n_6_7 0.420000
+R6_34 n_6_4 n_6_6 4.000000
+R7_34 n_6_3 n_6_5 4.000000
+R8_34 n_6_2 n_6_4 1.680000
+R9_34 n_6_2 n_6_3 0.420000
+R10_34 n_6_0 n_6_2 4.000000
+R11_34 n_6_0 g447:B2 0.268333
+
+*|NET n_7 0.000407PF
+*|I (g480:O g480 O O 0.000000PF 6.580 15.400)
+*|I (g447:A1 g447 A1 I 0.001925PF 7.700 14.840)
+*|I (g464:I1 g464 I1 I 0.001182PF 7.140 17.360)
+*|S (n_7_0 6.580 14.840)
+*|S (n_7_1 6.580 14.840)
+*|S (n_7_2 6.580 15.400)
+*|S (n_7_3 7.700 14.840)
+*|S (n_7_4 6.580 17.360)
+*|S (n_7_6 7.700 14.840)
+*|S (n_7_7 6.580 17.360)
+C1_35 n_7_0 0 0.000027PF
+C2_35 n_7_1 0 0.000055PF
+C3_35 n_7_2 0 0.000123PF
+C4_35 n_7_3 0 0.000055PF
+C5_35 n_7_4 0 0.000095PF
+C6_35 n_7_7 0 0.000026PF
+C7_35 g464:I1 0 0.000026PF
+R1_35 n_7_7 g464:I1 0.536667
+R2_35 n_7_6 g447:A1 4.000000
+R3_35 n_7_4 n_7_7 4.000000
+R4_35 n_7_3 n_7_6 4.000000
+R5_35 n_7_2 g480:O 4.000000
+R6_35 n_7_2 n_7_4 1.470000
+R7_35 n_7_1 n_7_3 0.840000
+R8_35 n_7_0 n_7_2 0.420000
+R9_35 n_7_0 n_7_1 4.000000
+
+*|NET n_8 0.000550PF
+*|I (g438:B2 g438 B2 I 0.001958PF 15.820 6.720)
+*|I (g474:O g474 O O 0.000000PF 21.140 6.720)
+*|I (g462:B1 g462 B1 I 0.002014PF 17.780 6.440)
+*|S (n_8_0 15.820 6.720)
+*|S (n_8_1 17.780 6.720)
+*|S (n_8_2 15.820 6.720)
+*|S (n_8_3 21.140 6.720)
+*|S (n_8_4 17.780 6.720)
+*|S (n_8_6 21.140 6.720)
+*|S (n_8_7 17.780 6.440)
+C1_36 n_8_0 0 0.000096PF
+C2_36 n_8_1 0 0.000261PF
+C3_36 n_8_3 0 0.000165PF
+C4_36 n_8_4 0 0.000014PF
+C5_36 n_8_7 0 0.000014PF
+R1_36 n_8_7 g462:B1 4.000000
+R2_36 n_8_6 g474:O 4.000000
+R3_36 n_8_4 n_8_7 0.210000
+R4_36 n_8_3 n_8_6 4.000000
+R5_36 n_8_2 g438:B2 4.000000
+R6_36 n_8_1 n_8_4 4.000000
+R7_36 n_8_1 n_8_3 2.520000
+R8_36 n_8_0 n_8_2 4.000000
+R9_36 n_8_0 n_8_1 1.470000
+
+*|NET n_9 0.000248PF
+*|I (g438:A1 g438 A1 I 0.001925PF 16.100 6.440)
+*|I (g462:I1 g462 I1 I 0.001182PF 17.220 6.440)
+*|I (g473:O g473 O O 0.000000PF 18.620 6.440)
+*|S (n_9_0 16.100 6.440)
+*|S (n_9_1 17.220 6.440)
+*|S (n_9_2 16.100 6.440)
+*|S (n_9_3 18.620 6.440)
+*|S (n_9_4 17.220 6.440)
+*|S (n_9_6 18.620 6.440)
+C1_37 n_9_0 0 0.000055PF
+C2_37 n_9_1 0 0.000124PF
+C3_37 n_9_3 0 0.000069PF
+R1_37 n_9_6 g473:O 4.000000
+R2_37 n_9_4 g462:I1 4.000000
+R3_37 n_9_3 n_9_6 4.000000
+R4_37 n_9_2 g438:A1 4.000000
+R5_37 n_9_1 n_9_4 4.000000
+R6_37 n_9_1 n_9_3 1.050000
+R7_37 n_9_0 n_9_2 4.000000
+R8_37 n_9_0 n_9_1 0.840000
+
+*|NET n_10 0.001012PF
+*|I (g450:B2 g450 B2 I 0.001958PF 19.740 17.920)
+*|I (g475:O g475 O O 0.000000PF 17.780 17.920)
+*|I (g460:B1 g460 B1 I 0.002014PF 25.340 15.120)
+*|S (n_10_1 19.740 17.920)
+*|S (n_10_2 19.740 17.920)
+*|S (n_10_3 19.740 15.120)
+*|S (n_10_4 18.340 17.920)
+*|S (n_10_5 19.740 15.120)
+*|S (n_10_6 18.340 17.920)
+*|S (n_10_7 25.340 15.120)
+*|S (n_10_8 18.340 17.920)
+*|S (n_10_9 25.340 15.120)
+C1_38 n_10_1 0 0.000136PF
+C2_38 n_10_2 0 0.000069PF
+C3_38 n_10_3 0 0.000136PF
+C4_38 n_10_4 0 0.000069PF
+C5_38 n_10_5 0 0.000275PF
+C6_38 n_10_7 0 0.000275PF
+C7_38 n_10_8 0 0.000026PF
+C8_38 g475:O 0 0.000026PF
+R1_38 n_10_9 g460:B1 4.000000
+R2_38 n_10_8 g475:O 0.536667
+R3_38 n_10_7 n_10_9 4.000000
+R4_38 n_10_6 n_10_8 4.000000
+R5_38 n_10_5 n_10_7 4.200000
+R6_38 n_10_4 n_10_6 4.000000
+R7_38 n_10_3 n_10_5 4.000000
+R8_38 n_10_2 n_10_4 1.050000
+R9_38 n_10_1 n_10_3 2.100000
+R10_38 n_10_1 n_10_2 4.000000
+R11_38 g450:B2 n_10_1 4.000000
+
+*|NET n_11 0.001234PF
+*|I (g450:A1 g450 A1 I 0.001925PF 19.460 17.640)
+*|I (g469:O g469 O O 0.000000PF 16.940 19.880)
+*|I (g460:I1 g460 I1 I 0.001182PF 24.780 15.120)
+*|S (n_11_1 19.460 17.640)
+*|S (n_11_2 19.460 19.880)
+*|S (n_11_3 19.460 16.800)
+*|S (n_11_4 19.460 19.880)
+*|S (n_11_5 19.460 16.800)
+*|S (n_11_6 16.940 19.880)
+*|S (n_11_7 24.780 16.800)
+*|S (n_11_8 16.940 19.880)
+*|S (n_11_9 24.780 16.800)
+*|S (n_11_11 24.780 15.120)
+C1_39 n_11_1 0 0.000150PF
+C2_39 n_11_2 0 0.000109PF
+C3_39 n_11_3 0 0.000041PF
+C4_39 n_11_4 0 0.000124PF
+C5_39 n_11_5 0 0.000261PF
+C6_39 n_11_6 0 0.000124PF
+C7_39 n_11_7 0 0.000261PF
+C8_39 n_11_9 0 0.000082PF
+C9_39 n_11_11 0 0.000082PF
+R1_39 n_11_11 g460:I1 4.000000
+R2_39 n_11_9 n_11_11 1.260000
+R3_39 n_11_8 g469:O 4.000000
+R4_39 n_11_7 n_11_9 4.000000
+R5_39 n_11_6 n_11_8 4.000000
+R6_39 n_11_5 n_11_7 3.990000
+R7_39 n_11_4 n_11_6 1.890000
+R8_39 n_11_3 n_11_5 4.000000
+R9_39 n_11_2 n_11_4 4.000000
+R10_39 n_11_1 n_11_3 0.630000
+R11_39 n_11_1 n_11_2 1.680000
+R12_39 g450:A1 n_11_1 4.000000
+
+*|NET n_12 0.000519PF
+*|I (g458:B1 g458 B1 I 0.002014PF 19.740 20.720)
+*|I (g479:O g479 O O 0.000000PF 18.620 20.720)
+*|I (g453:A1 g453 A1 I 0.002054PF 21.420 23.240)
+*|S (n_12_0 20.860 20.720)
+*|S (n_12_1 20.860 21.000)
+*|S (n_12_2 19.740 20.720)
+*|S (n_12_3 21.140 21.000)
+*|S (n_12_4 19.740 20.720)
+*|S (n_12_5 18.620 20.720)
+*|S (n_12_6 21.140 21.000)
+*|S (n_12_8 18.620 20.720)
+*|S (n_12_9 21.140 23.240)
+*|S (n_12_11 21.140 23.240)
+C1_40 n_12_0 0 0.000069PF
+C2_40 n_12_1 0 0.000028PF
+C3_40 n_12_2 0 0.000110PF
+C4_40 n_12_3 0 0.000014PF
+C5_40 n_12_5 0 0.000055PF
+C6_40 n_12_6 0 0.000109PF
+C7_40 n_12_9 0 0.000109PF
+C8_40 n_12_11 0 0.000013PF
+C9_40 g453:A1 0 0.000013PF
+R1_40 n_12_11 g453:A1 0.268333
+R2_40 n_12_9 n_12_11 4.000000
+R3_40 n_12_8 g479:O 4.000000
+R4_40 n_12_6 n_12_9 1.680000
+R5_40 n_12_5 n_12_8 4.000000
+R6_40 n_12_4 g458:B1 4.000000
+R7_40 n_12_3 n_12_6 4.000000
+R8_40 n_12_2 n_12_5 0.840000
+R9_40 n_12_2 n_12_4 4.000000
+R10_40 n_12_1 n_12_3 0.210000
+R11_40 n_12_0 n_12_2 0.840000
+R12_40 n_12_0 n_12_1 0.210000
+
+*|NET n_13 0.000429PF
+*|I (g472:O g472 O O 0.000000PF 19.460 22.680)
+*|I (g453:B1 g453 B1 I 0.002295PF 20.860 23.520)
+*|I (g458:I1 g458 I1 I 0.001182PF 19.180 20.720)
+*|S (n_13_0 20.580 22.680)
+*|S (n_13_1 20.580 22.680)
+*|S (n_13_3 20.580 23.520)
+*|S (n_13_4 19.460 22.680)
+*|S (n_13_5 20.580 23.520)
+*|S (n_13_6 19.460 22.400)
+*|S (n_13_8 19.180 22.400)
+*|S (n_13_9 19.180 20.720)
+C1_41 n_13_0 0 0.000052PF
+C2_41 n_13_1 0 0.000041PF
+C3_41 g472:O 0 0.000052PF
+C4_41 n_13_3 0 0.000041PF
+C5_41 n_13_4 0 0.000014PF
+C6_41 n_13_5 0 0.000013PF
+C7_41 n_13_6 0 0.000027PF
+C8_41 g453:B1 0 0.000013PF
+C9_41 n_13_8 0 0.000095PF
+C10_41 n_13_9 0 0.000082PF
+R1_41 n_13_9 g458:I1 4.000000
+R2_41 n_13_8 n_13_9 1.260000
+R3_41 n_13_6 n_13_8 0.210000
+R4_41 n_13_5 g453:B1 0.268333
+R5_41 n_13_4 n_13_6 0.210000
+R6_41 n_13_3 n_13_5 4.000000
+R7_41 g472:O n_13_4 4.000000
+R8_41 n_13_1 n_13_3 0.630000
+R9_41 n_13_0 g472:O 1.073333
+R10_41 n_13_0 n_13_1 4.000000
+
+*|NET n_14 0.000550PF
+*|I (g458:O g458 O O 0.000000PF 20.300 20.440)
+*|I (g451:S g451 S I 0.002852PF 25.620 20.720)
+*|S (n_14_1 20.300 20.440)
+*|S (n_14_2 20.300 20.440)
+*|S (n_14_3 25.620 20.440)
+*|S (n_14_4 25.620 20.440)
+*|S (n_14_5 25.620 20.720)
+C1_42 n_14_2 0 0.000261PF
+C2_42 n_14_3 0 0.000261PF
+C3_42 n_14_4 0 0.000014PF
+C4_42 n_14_5 0 0.000014PF
+R1_42 n_14_5 g451:S 4.000000
+R2_42 n_14_4 n_14_5 0.210000
+R3_42 n_14_3 n_14_4 4.000000
+R4_42 n_14_2 n_14_3 3.990000
+R5_42 n_14_1 n_14_2 4.000000
+R6_42 g458:O n_14_1 4.000000
+
+*|NET n_15 0.000797PF
+*|I (g457:B1 g457 B1 I 0.002014PF 8.820 6.440)
+*|I (g481:O g481 O O 0.000000PF 6.580 7.000)
+*|I (g441:B2 g441 B2 I 0.001958PF 13.860 6.720)
+*|S (n_15_0 12.460 7.000)
+*|S (n_15_1 8.820 7.000)
+*|S (n_15_2 12.460 6.720)
+*|S (n_15_3 8.820 7.000)
+*|S (n_15_4 6.580 7.000)
+*|S (n_15_5 13.860 6.720)
+*|S (n_15_6 8.820 6.440)
+*|S (n_15_7 6.580 7.000)
+*|S (n_15_8 13.860 6.720)
+C1_43 n_15_0 0 0.000193PF
+C2_43 n_15_1 0 0.000289PF
+C3_43 n_15_2 0 0.000083PF
+C4_43 n_15_3 0 0.000027PF
+C5_43 n_15_4 0 0.000110PF
+C6_43 n_15_5 0 0.000069PF
+C7_43 n_15_6 0 0.000027PF
+R1_43 n_15_8 g441:B2 4.000000
+R2_43 n_15_7 g481:O 4.000000
+R3_43 n_15_6 g457:B1 4.000000
+R4_43 n_15_5 n_15_8 4.000000
+R5_43 n_15_4 n_15_7 4.000000
+R6_43 n_15_3 n_15_6 0.420000
+R7_43 n_15_2 n_15_5 1.050000
+R8_43 n_15_1 n_15_4 1.680000
+R9_43 n_15_1 n_15_3 4.000000
+R10_43 n_15_0 n_15_2 0.210000
+R11_43 n_15_0 n_15_1 2.730000
+
+*|NET n_16 0.000631PF
+*|I (g478:O g478 O O 0.000000PF 7.980 6.440)
+*|I (g457:I1 g457 I1 I 0.001182PF 8.260 6.440)
+*|I (g441:A1 g441 A1 I 0.001925PF 14.140 6.440)
+*|S (n_16_2 8.260 6.160)
+*|S (n_16_3 8.260 6.160)
+*|S (n_16_4 14.140 6.160)
+*|S (n_16_5 14.140 6.160)
+*|S (n_16_6 14.140 6.440)
+C1_44 g478:O 0 0.000013PF
+C2_44 g457:I1 0 0.000013PF
+C3_44 n_16_3 0 0.000289PF
+C4_44 n_16_4 0 0.000289PF
+C5_44 n_16_5 0 0.000014PF
+C6_44 n_16_6 0 0.000014PF
+R1_44 n_16_6 g441:A1 4.000000
+R2_44 n_16_5 n_16_6 0.210000
+R3_44 n_16_4 n_16_5 4.000000
+R4_44 n_16_3 n_16_4 4.410000
+R5_44 n_16_2 n_16_3 4.000000
+R6_44 g457:I1 n_16_2 4.000000
+R7_44 g478:O g457:I1 0.268333
+
+*|NET n_17 0.000683PF
+*|I (g465:I g465 I I 0.002765PF 8.820 14.560)
+*|I (g442:B g442 B I 0.001974PF 10.220 14.560)
+*|I (g466:O g466 O O 0.000000PF 7.980 9.800)
+*|S (n_17_0 8.820 14.560)
+*|S (n_17_1 10.220 14.560)
+*|S (n_17_2 8.820 14.560)
+*|S (n_17_3 10.220 14.560)
+*|S (n_17_5 8.820 12.600)
+*|S (n_17_7 8.820 12.600)
+*|S (n_17_8 7.980 12.600)
+*|S (n_17_9 7.980 12.600)
+*|S (n_17_10 7.980 9.800)
+C1_45 n_17_0 0 0.000069PF
+C2_45 n_17_1 0 0.000069PF
+C3_45 n_17_2 0 0.000095PF
+C4_45 n_17_5 0 0.000095PF
+C5_45 n_17_7 0 0.000041PF
+C6_45 n_17_8 0 0.000041PF
+C7_45 n_17_9 0 0.000136PF
+C8_45 n_17_10 0 0.000136PF
+R1_45 n_17_10 g466:O 4.000000
+R2_45 n_17_9 n_17_10 2.100000
+R3_45 n_17_8 n_17_9 4.000000
+R4_45 n_17_7 n_17_8 0.630000
+R5_45 n_17_5 n_17_7 4.000000
+R6_45 n_17_3 g442:B 4.000000
+R7_45 n_17_2 n_17_5 1.470000
+R8_45 n_17_2 g465:I 4.000000
+R9_45 n_17_1 n_17_3 4.000000
+R10_45 n_17_0 n_17_2 4.000000
+R11_45 n_17_0 n_17_1 1.050000
+
+*|NET n_18 0.000165PF
+*|I (g465:O g465 O O 0.000000PF 9.380 15.120)
+*|I (g442:A g442 A I 0.001994PF 11.060 15.120)
+*|S (n_18_1 9.380 15.120)
+*|S (n_18_2 9.380 15.120)
+*|S (n_18_3 11.060 15.120)
+*|S (n_18_4 11.060 15.120)
+C1_46 n_18_2 0 0.000083PF
+C2_46 n_18_3 0 0.000083PF
+R1_46 n_18_4 g442:A 4.000000
+R2_46 n_18_3 n_18_4 4.000000
+R3_46 n_18_2 n_18_3 1.260000
+R4_46 n_18_1 n_18_2 4.000000
+R5_46 g465:O n_18_1 4.000000
+
+*|NET n_19 0.000594PF
+*|I (g464:O g464 O O 0.000000PF 8.260 17.640)
+*|I (g463:I g463 I I 0.002765PF 9.940 17.640)
+*|I (g445:B g445 B I 0.001974PF 12.180 20.160)
+*|S (n_19_2 9.940 17.920)
+*|S (n_19_3 9.940 18.480)
+*|S (n_19_4 9.940 18.480)
+*|S (n_19_5 12.180 18.480)
+*|S (n_19_6 12.180 18.480)
+*|S (n_19_7 12.180 20.160)
+C1_47 g464:O 0 0.000078PF
+C2_47 g463:I 0 0.000078PF
+C3_47 n_19_2 0 0.000027PF
+C4_47 n_19_3 0 0.000027PF
+C5_47 n_19_4 0 0.000110PF
+C6_47 n_19_5 0 0.000110PF
+C7_47 n_19_6 0 0.000082PF
+C8_47 n_19_7 0 0.000082PF
+R1_47 n_19_7 g445:B 4.000000
+R2_47 n_19_6 n_19_7 1.260000
+R3_47 n_19_5 n_19_6 4.000000
+R4_47 n_19_4 n_19_5 1.680000
+R5_47 n_19_3 n_19_4 4.000000
+R6_47 n_19_2 n_19_3 0.420000
+R7_47 g463:I n_19_2 4.000000
+R8_47 g464:O g463:I 1.610000
+
+*|NET n_20 0.000324PF
+*|I (g463:O g463 O O 0.000000PF 10.500 17.920)
+*|I (g445:A g445 A I 0.001994PF 11.340 20.440)
+*|S (n_20_1 11.060 17.920)
+*|S (n_20_2 11.060 17.920)
+*|S (n_20_3 11.340 17.920)
+*|S (n_20_4 11.340 20.440)
+C1_48 g463:O 0 0.000026PF
+C2_48 n_20_1 0 0.000026PF
+C3_48 n_20_2 0 0.000014PF
+C4_48 n_20_3 0 0.000136PF
+C5_48 n_20_4 0 0.000123PF
+R1_48 n_20_4 g445:A 4.000000
+R2_48 n_20_3 n_20_4 1.890000
+R3_48 n_20_2 n_20_3 0.210000
+R4_48 n_20_1 n_20_2 4.000000
+R5_48 g463:O n_20_1 0.536667
+
+*|NET n_21 0.000466PF
+*|I (g461:I g461 I I 0.002765PF 18.340 8.960)
+*|I (g462:O g462 O O 0.000000PF 18.340 7.000)
+*|I (g436:B g436 B I 0.001974PF 15.540 8.960)
+*|S (n_21_0 18.340 8.960)
+*|S (n_21_1 18.340 8.960)
+*|S (n_21_2 15.540 8.960)
+*|S (n_21_4 18.340 7.000)
+*|S (n_21_5 15.540 8.960)
+C1_49 n_21_0 0 0.000138PF
+C2_49 n_21_1 0 0.000095PF
+C3_49 n_21_2 0 0.000138PF
+C4_49 n_21_4 0 0.000095PF
+R1_49 n_21_5 g436:B 4.000000
+R2_49 n_21_4 g462:O 4.000000
+R3_49 n_21_2 n_21_5 4.000000
+R4_49 n_21_1 n_21_4 1.470000
+R5_49 n_21_1 g461:I 4.000000
+R6_49 n_21_0 n_21_2 2.100000
+R7_49 n_21_0 n_21_1 4.000000
+
+*|NET n_22 0.000138PF
+*|I (g461:O g461 O O 0.000000PF 17.780 9.240)
+*|I (g436:A g436 A I 0.001994PF 16.380 9.240)
+*|S (n_22_1 17.780 9.240)
+*|S (n_22_2 17.780 9.240)
+*|S (n_22_3 16.380 9.240)
+*|S (n_22_4 16.380 9.240)
+C1_50 n_22_2 0 0.000069PF
+C2_50 n_22_3 0 0.000069PF
+R1_50 n_22_4 g436:A 4.000000
+R2_50 n_22_3 n_22_4 4.000000
+R3_50 n_22_2 n_22_3 1.050000
+R4_50 n_22_1 n_22_2 4.000000
+R5_50 g461:O n_22_1 4.000000
+
+*|NET n_23 0.000931PF
+*|I (g459:I g459 I I 0.002765PF 25.900 17.920)
+*|I (g460:O g460 O O 0.000000PF 25.900 15.400)
+*|I (g448:B g448 B I 0.001974PF 21.140 20.160)
+*|S (n_23_0 25.900 17.920)
+*|S (n_23_1 25.900 17.920)
+*|S (n_23_2 21.140 17.920)
+*|S (n_23_4 25.900 15.400)
+*|S (n_23_5 21.140 17.920)
+*|S (n_23_7 21.140 20.160)
+C1_51 n_23_0 0 0.000234PF
+C2_51 n_23_1 0 0.000123PF
+C3_51 n_23_2 0 0.000234PF
+C4_51 n_23_4 0 0.000123PF
+C5_51 n_23_5 0 0.000109PF
+C6_51 n_23_7 0 0.000109PF
+R1_51 n_23_7 g448:B 4.000000
+R2_51 n_23_5 n_23_7 1.680000
+R3_51 n_23_4 g460:O 4.000000
+R4_51 n_23_2 n_23_5 4.000000
+R5_51 n_23_1 n_23_4 1.890000
+R6_51 n_23_1 g459:I 4.000000
+R7_51 n_23_0 n_23_2 3.570000
+R8_51 n_23_0 n_23_1 4.000000
+
+*|NET n_24 0.000548PF
+*|I (g459:O g459 O O 0.000000PF 25.340 18.200)
+*|I (g448:A g448 A I 0.001994PF 21.980 20.440)
+*|S (n_24_1 25.340 18.200)
+*|S (n_24_2 25.340 18.200)
+*|S (n_24_3 21.980 18.200)
+*|S (n_24_4 21.980 18.200)
+*|S (n_24_5 21.980 20.440)
+C1_52 n_24_2 0 0.000165PF
+C2_52 n_24_3 0 0.000165PF
+C3_52 n_24_4 0 0.000109PF
+C4_52 n_24_5 0 0.000109PF
+R1_52 n_24_5 g448:A 4.000000
+R2_52 n_24_4 n_24_5 1.680000
+R3_52 n_24_3 n_24_4 4.000000
+R4_52 n_24_2 n_24_3 2.520000
+R5_52 n_24_1 n_24_2 4.000000
+R6_52 g459:O n_24_1 4.000000
+
+*|NET n_25 0.000411PF
+*|I (g454:O g454 O O 0.000000PF 13.020 19.880)
+*|I (result_reg\[0\]:D result_reg\[0\] D I 0.001220PF 14.980 17.640)
+*|S (n_25_1 13.020 19.880)
+*|S (n_25_2 13.020 19.600)
+*|S (n_25_3 13.020 19.600)
+*|S (n_25_4 14.980 19.600)
+*|S (n_25_5 14.980 19.600)
+*|S (n_25_6 14.980 17.640)
+C1_53 n_25_1 0 0.000014PF
+C2_53 n_25_2 0 0.000014PF
+C3_53 n_25_3 0 0.000096PF
+C4_53 n_25_4 0 0.000096PF
+C5_53 n_25_5 0 0.000095PF
+C6_53 n_25_6 0 0.000095PF
+R1_53 n_25_6 result_reg\[0\]:D 4.000000
+R2_53 n_25_5 n_25_6 1.470000
+R3_53 n_25_4 n_25_5 4.000000
+R4_53 n_25_3 n_25_4 1.470000
+R5_53 n_25_2 n_25_3 4.000000
+R6_53 n_25_1 n_25_2 0.210000
+R7_53 g454:O n_25_1 4.000000
+
+*|NET n_26 0.001088PF
+*|I (g451:A g451 A I 0.001994PF 24.500 20.720)
+*|I (g455:I g455 I I 0.002130PF 25.060 23.520)
+*|I (g453:B2 g453 B2 I 0.002616PF 20.300 23.520)
+*|I (g471:O g471 O O 0.000000PF 17.220 23.800)
+*|S (n_26_0 24.500 23.520)
+*|S (n_26_1 24.500 23.520)
+*|S (n_26_2 24.500 20.720)
+*|S (n_26_3 25.060 23.520)
+*|S (n_26_4 20.020 23.520)
+*|S (n_26_6 25.060 23.520)
+*|S (n_26_7 20.020 23.520)
+*|S (n_26_8 18.620 23.520)
+*|S (n_26_10 20.020 23.520)
+*|S (n_26_11 18.620 23.520)
+*|S (n_26_13 18.620 23.800)
+*|S (n_26_14 18.620 23.800)
+C1_54 n_26_0 0 0.000136PF
+C2_54 n_26_1 0 0.000248PF
+C3_54 n_26_2 0 0.000136PF
+C4_54 n_26_3 0 0.000028PF
+C5_54 n_26_4 0 0.000289PF
+C6_54 n_26_8 0 0.000069PF
+C7_54 n_26_10 0 0.000013PF
+C8_54 n_26_11 0 0.000014PF
+C9_54 g453:B2 0 0.000013PF
+C10_54 n_26_13 0 0.000014PF
+C11_54 n_26_14 0 0.000065PF
+C12_54 g471:O 0 0.000065PF
+R1_54 n_26_14 g471:O 1.341667
+R2_54 n_26_13 n_26_14 4.000000
+R3_54 n_26_11 n_26_13 0.210000
+R4_54 n_26_10 g453:B2 0.268333
+R5_54 n_26_8 n_26_11 4.000000
+R6_54 n_26_7 n_26_10 4.000000
+R7_54 n_26_6 g455:I 4.000000
+R8_54 n_26_4 n_26_8 1.050000
+R9_54 n_26_4 n_26_7 4.000000
+R10_54 n_26_3 n_26_6 4.000000
+R11_54 n_26_2 g451:A 4.000000
+R12_54 n_26_1 n_26_4 3.360000
+R13_54 n_26_1 n_26_3 0.420000
+R14_54 n_26_0 n_26_2 2.100000
+R15_54 n_26_0 n_26_1 4.000000
+
+*|NET n_27 0.000163PF
+*|I (g457:O g457 O O 0.000000PF 9.380 6.440)
+*|I (g456:I g456 I I 0.002765PF 9.660 6.440)
+*|I (g439:B g439 B I 0.001974PF 11.060 6.720)
+*|S (n_27_2 9.660 6.720)
+*|S (n_27_3 9.660 6.720)
+*|S (n_27_4 11.060 6.720)
+*|S (n_27_5 11.060 6.720)
+C1_55 g457:O 0 0.000013PF
+C2_55 g456:I 0 0.000013PF
+C3_55 n_27_3 0 0.000069PF
+C4_55 n_27_4 0 0.000069PF
+R1_55 n_27_5 g439:B 4.000000
+R2_55 n_27_4 n_27_5 4.000000
+R3_55 n_27_3 n_27_4 1.050000
+R4_55 n_27_2 n_27_3 4.000000
+R5_55 g456:I n_27_2 4.000000
+R6_55 g457:O g456:I 0.268333
+
+*|NET n_28 0.000165PF
+*|I (g456:O g456 O O 0.000000PF 10.220 6.440)
+*|I (g439:A g439 A I 0.001994PF 11.900 6.440)
+*|S (n_28_1 10.220 6.440)
+*|S (n_28_2 10.220 6.440)
+*|S (n_28_3 11.900 6.440)
+*|S (n_28_4 11.900 6.440)
+C1_56 n_28_2 0 0.000083PF
+C2_56 n_28_3 0 0.000083PF
+R1_56 n_28_4 g439:A 4.000000
+R2_56 n_28_3 n_28_4 4.000000
+R3_56 n_28_2 n_28_3 1.260000
+R4_56 n_28_1 n_28_2 4.000000
+R5_56 g456:O n_28_1 4.000000
+
+*|NET n_29 0.000411PF
+*|I (g451:O g451 O O 0.000000PF 23.380 19.880)
+*|I (result_reg\[1\]:D result_reg\[1\] D I 0.001220PF 21.420 17.640)
+*|S (n_29_1 23.380 19.880)
+*|S (n_29_2 23.380 19.880)
+*|S (n_29_3 21.420 19.880)
+*|S (n_29_4 21.420 19.880)
+*|S (n_29_5 21.420 17.640)
+C1_57 n_29_2 0 0.000096PF
+C2_57 n_29_3 0 0.000096PF
+C3_57 n_29_4 0 0.000109PF
+C4_57 n_29_5 0 0.000109PF
+R1_57 n_29_5 result_reg\[1\]:D 4.000000
+R2_57 n_29_4 n_29_5 1.680000
+R3_57 n_29_3 n_29_4 4.000000
+R4_57 n_29_2 n_29_3 1.470000
+R5_57 n_29_1 n_29_2 4.000000
+R6_57 g451:O n_29_1 4.000000
+
+*|NET n_30 0.000572PF
+*|I (g448:S g448 S I 0.002852PF 20.860 20.720)
+*|I (g453:O g453 O O 0.000000PF 21.420 22.680)
+*|I (g450:B1 g450 B1 I 0.001651PF 20.300 17.920)
+*|S (n_30_1 20.860 20.720)
+*|S (n_30_2 20.860 22.680)
+*|S (n_30_3 20.860 18.480)
+*|S (n_30_4 20.860 22.680)
+*|S (n_30_5 20.580 18.480)
+*|S (n_30_6 21.420 22.680)
+*|S (n_30_7 20.580 17.920)
+*|S (n_30_8 21.420 22.680)
+*|S (n_30_9 20.580 17.920)
+C1_58 n_30_1 0 0.000204PF
+C2_58 n_30_2 0 0.000095PF
+C3_58 n_30_3 0 0.000123PF
+C4_58 n_30_4 0 0.000028PF
+C5_58 n_30_5 0 0.000041PF
+C6_58 n_30_6 0 0.000028PF
+C7_58 n_30_7 0 0.000027PF
+C8_58 n_30_9 0 0.000013PF
+C9_58 g450:B1 0 0.000013PF
+R1_58 n_30_9 g450:B1 0.268333
+R2_58 n_30_8 g453:O 4.000000
+R3_58 n_30_7 n_30_9 4.000000
+R4_58 n_30_6 n_30_8 4.000000
+R5_58 n_30_5 n_30_7 0.420000
+R6_58 n_30_4 n_30_6 0.420000
+R7_58 n_30_3 n_30_5 0.210000
+R8_58 n_30_2 n_30_4 4.000000
+R9_58 n_30_1 n_30_3 1.680000
+R10_58 n_30_1 n_30_2 1.470000
+R11_58 g448:S n_30_1 4.000000
+
+*|NET n_31 0.000983PF
+*|I (g448:O g448 O O 0.000000PF 23.100 20.160)
+*|I (result_reg\[2\]:D result_reg\[2\] D I 0.001220PF 25.060 12.040)
+*|S (n_31_1 23.100 20.160)
+*|S (n_31_2 23.100 12.040)
+*|S (n_31_3 23.100 12.040)
+*|S (n_31_4 25.060 12.040)
+*|S (n_31_5 25.060 12.040)
+C1_59 n_31_1 0 0.000395PF
+C2_59 n_31_2 0 0.000395PF
+C3_59 n_31_3 0 0.000096PF
+C4_59 n_31_4 0 0.000096PF
+R1_59 n_31_5 result_reg\[2\]:D 4.000000
+R2_59 n_31_4 n_31_5 4.000000
+R3_59 n_31_3 n_31_4 1.470000
+R4_59 n_31_2 n_31_3 4.000000
+R5_59 n_31_1 n_31_2 6.090000
+R6_59 g448:O n_31_1 4.000000
+
+*|NET n_32 0.001728PF
+*|I (g445:S g445 S I 0.002852PF 12.460 20.440)
+*|I (g450:O g450 O O 0.000000PF 18.620 18.200)
+*|I (g447:B1 g447 B1 I 0.001651PF 6.860 14.560)
+*|S (n_32_0 12.460 20.440)
+*|S (n_32_1 12.460 18.200)
+*|S (n_32_3 12.460 18.200)
+*|S (n_32_4 12.460 17.080)
+*|S (n_32_5 18.620 18.200)
+*|S (n_32_6 12.460 17.080)
+*|S (n_32_7 18.620 18.200)
+*|S (n_32_8 6.860 17.080)
+*|S (n_32_10 6.860 17.080)
+*|S (n_32_11 6.860 14.560)
+C1_60 n_32_0 0 0.000109PF
+C2_60 n_32_1 0 0.000164PF
+C3_60 n_32_3 0 0.000303PF
+C4_60 n_32_4 0 0.000055PF
+C5_60 n_32_5 0 0.000303PF
+C6_60 n_32_6 0 0.000275PF
+C7_60 n_32_8 0 0.000275PF
+C8_60 n_32_10 0 0.000123PF
+C9_60 n_32_11 0 0.000123PF
+R1_60 n_32_11 g447:B1 4.000000
+R2_60 n_32_10 n_32_11 1.890000
+R3_60 n_32_8 n_32_10 4.000000
+R4_60 n_32_7 g450:O 4.000000
+R5_60 n_32_6 n_32_8 4.200000
+R6_60 n_32_5 n_32_7 4.000000
+R7_60 n_32_4 n_32_6 4.000000
+R8_60 n_32_3 n_32_5 4.620000
+R9_60 n_32_1 n_32_4 0.840000
+R10_60 n_32_1 n_32_3 4.000000
+R11_60 n_32_0 g445:S 4.000000
+R12_60 n_32_0 n_32_1 1.680000
+
+*|NET n_33 0.000110PF
+*|I (g445:O g445 O O 0.000000PF 10.220 20.440)
+*|I (result_reg\[3\]:D result_reg\[3\] D I 0.001220PF 9.100 20.440)
+*|S (n_33_1 10.220 20.440)
+*|S (n_33_2 10.220 20.440)
+*|S (n_33_3 9.100 20.440)
+*|S (n_33_4 9.100 20.440)
+C1_61 n_33_2 0 0.000055PF
+C2_61 n_33_3 0 0.000055PF
+R1_61 n_33_4 result_reg\[3\]:D 4.000000
+R2_61 n_33_3 n_33_4 4.000000
+R3_61 n_33_2 n_33_3 0.840000
+R4_61 n_33_1 n_33_2 4.000000
+R5_61 g445:O n_33_1 4.000000
+
+*|NET n_34 0.000547PF
+*|I (g442:S g442 S I 0.002852PF 9.940 15.120)
+*|I (g447:O g447 O O 0.000000PF 8.540 14.280)
+*|I (g444:B1 g444 B1 I 0.001651PF 7.420 12.320)
+*|S (n_34_0 9.940 14.000)
+*|S (n_34_1 9.940 14.000)
+*|S (n_34_2 8.540 14.000)
+*|S (n_34_3 9.940 15.120)
+*|S (n_34_4 8.540 14.000)
+*|S (n_34_5 7.420 14.000)
+*|S (n_34_7 8.540 14.280)
+*|S (n_34_8 7.420 14.000)
+*|S (n_34_10 7.420 12.320)
+C1_62 n_34_0 0 0.000069PF
+C2_62 n_34_1 0 0.000055PF
+C3_62 n_34_2 0 0.000124PF
+C4_62 n_34_3 0 0.000055PF
+C5_62 n_34_4 0 0.000014PF
+C6_62 n_34_5 0 0.000055PF
+C7_62 n_34_7 0 0.000014PF
+C8_62 n_34_8 0 0.000082PF
+C9_62 n_34_10 0 0.000082PF
+R1_62 n_34_10 g444:B1 4.000000
+R2_62 n_34_8 n_34_10 1.260000
+R3_62 n_34_7 g447:O 4.000000
+R4_62 n_34_5 n_34_8 4.000000
+R5_62 n_34_4 n_34_7 0.210000
+R6_62 n_34_3 g442:S 4.000000
+R7_62 n_34_2 n_34_5 0.840000
+R8_62 n_34_2 n_34_4 4.000000
+R9_62 n_34_1 n_34_3 0.840000
+R10_62 n_34_0 n_34_2 1.050000
+R11_62 n_34_0 n_34_1 4.000000
+
+*|NET n_35 0.000385PF
+*|I (g442:O g442 O O 0.000000PF 12.180 14.840)
+*|I (result_reg\[4\]:D result_reg\[4\] D I 0.001220PF 16.100 14.840)
+*|S (n_35_1 12.180 14.840)
+*|S (n_35_2 12.180 14.840)
+*|S (n_35_3 16.100 14.840)
+*|S (n_35_4 16.100 14.840)
+C1_63 n_35_2 0 0.000193PF
+C2_63 n_35_3 0 0.000193PF
+R1_63 n_35_4 result_reg\[4\]:D 4.000000
+R2_63 n_35_3 n_35_4 4.000000
+R3_63 n_35_2 n_35_3 2.940000
+R4_63 n_35_1 n_35_2 4.000000
+R5_63 g442:O n_35_1 4.000000
+
+*|NET n_36 0.001036PF
+*|I (g439:S g439 S I 0.002852PF 10.780 6.160)
+*|I (g441:B1 g441 B1 I 0.001651PF 13.300 6.440)
+*|I (g444:O g444 O O 0.000000PF 9.100 11.480)
+*|S (n_36_0 10.780 5.880)
+*|S (n_36_1 10.780 6.160)
+*|S (n_36_2 10.780 5.880)
+*|S (n_36_4 13.300 5.880)
+*|S (n_36_5 9.660 5.880)
+*|S (n_36_6 13.300 5.880)
+*|S (n_36_7 9.660 5.880)
+*|S (n_36_8 13.300 6.440)
+*|S (n_36_9 9.660 11.480)
+*|S (n_36_11 9.660 11.480)
+*|S (n_36_12 9.380 11.480)
+*|S (n_36_13 9.380 11.480)
+*|S (n_36_14 9.380 11.480)
+C1_64 n_36_0 0 0.000014PF
+C2_64 n_36_1 0 0.000014PF
+C3_64 n_36_2 0 0.000179PF
+C4_64 n_36_4 0 0.000124PF
+C5_64 n_36_5 0 0.000055PF
+C6_64 n_36_6 0 0.000027PF
+C7_64 n_36_7 0 0.000272PF
+C8_64 n_36_8 0 0.000027PF
+C9_64 n_36_9 0 0.000272PF
+C10_64 n_36_11 0 0.000014PF
+C11_64 n_36_12 0 0.000014PF
+C12_64 n_36_14 0 0.000013PF
+C13_64 g444:O 0 0.000013PF
+R1_64 n_36_14 g444:O 0.268333
+R2_64 n_36_13 n_36_14 4.000000
+R3_64 n_36_12 n_36_13 4.000000
+R4_64 n_36_11 n_36_12 0.210000
+R5_64 n_36_9 n_36_11 4.000000
+R6_64 n_36_8 g441:B1 4.000000
+R7_64 n_36_7 n_36_9 4.200000
+R8_64 n_36_6 n_36_8 0.420000
+R9_64 n_36_5 n_36_7 4.000000
+R10_64 n_36_4 n_36_6 4.000000
+R11_64 n_36_2 n_36_5 0.840000
+R12_64 n_36_2 n_36_4 1.890000
+R13_64 n_36_1 g439:S 4.000000
+R14_64 n_36_0 n_36_2 4.000000
+R15_64 n_36_0 n_36_1 0.210000
+
+*|NET n_37 0.000273PF
+*|I (g439:O g439 O O 0.000000PF 13.020 7.000)
+*|I (result_reg\[5\]:D result_reg\[5\] D I 0.001220PF 13.580 9.240)
+*|S (n_37_1 13.020 7.000)
+*|S (n_37_2 13.020 7.000)
+*|S (n_37_3 13.580 7.000)
+*|S (n_37_4 13.580 7.000)
+*|S (n_37_5 13.580 9.240)
+C1_65 n_37_2 0 0.000028PF
+C2_65 n_37_3 0 0.000028PF
+C3_65 n_37_4 0 0.000109PF
+C4_65 n_37_5 0 0.000109PF
+R1_65 n_37_5 result_reg\[5\]:D 4.000000
+R2_65 n_37_4 n_37_5 1.680000
+R3_65 n_37_3 n_37_4 4.000000
+R4_65 n_37_2 n_37_3 0.420000
+R5_65 n_37_1 n_37_2 4.000000
+R6_65 g439:O n_37_1 4.000000
+
+*|NET n_38 0.000298PF
+*|I (g438:B1 g438 B1 I 0.001651PF 15.260 6.720)
+*|I (g436:S g436 S I 0.002852PF 15.260 9.520)
+*|I (g441:O g441 O O 0.000000PF 14.980 6.720)
+*|S (n_38_0 15.260 6.720)
+*|S (n_38_1 15.260 9.520)
+C1_66 n_38_0 0 0.000136PF
+C2_66 n_38_1 0 0.000136PF
+C3_66 g438:B1 0 0.000013PF
+C4_66 g441:O 0 0.000013PF
+R1_66 g438:B1 g441:O 0.268333
+R2_66 n_38_1 g436:S 4.000000
+R3_66 n_38_0 g438:B1 4.000000
+R4_66 n_38_0 n_38_1 2.100000
+
+*|NET n_39 0.000495PF
+*|I (g438:O g438 O O 0.000000PF 16.940 5.880)
+*|I (g434:S g434 S I 0.002852PF 21.700 6.160)
+*|S (n_39_1 16.940 5.880)
+*|S (n_39_2 16.940 5.880)
+*|S (n_39_3 21.700 5.880)
+*|S (n_39_4 21.700 5.880)
+*|S (n_39_5 21.700 6.160)
+C1_67 n_39_2 0 0.000234PF
+C2_67 n_39_3 0 0.000234PF
+C3_67 n_39_4 0 0.000014PF
+C4_67 n_39_5 0 0.000014PF
+R1_67 n_39_5 g434:S 4.000000
+R2_67 n_39_4 n_39_5 0.210000
+R3_67 n_39_3 n_39_4 4.000000
+R4_67 n_39_2 n_39_3 3.570000
+R5_67 n_39_1 n_39_2 4.000000
+R6_67 g438:O n_39_1 4.000000
+
+*|NET n_40 0.000383PF
+*|I (g436:O g436 O O 0.000000PF 17.500 9.800)
+*|I (result_reg\[6\]:D result_reg\[6\] D I 0.001220PF 19.180 12.040)
+*|S (n_40_1 17.500 9.800)
+*|S (n_40_2 17.500 9.800)
+*|S (n_40_3 19.180 9.800)
+*|S (n_40_4 19.180 9.800)
+*|S (n_40_5 19.180 12.040)
+C1_68 n_40_2 0 0.000083PF
+C2_68 n_40_3 0 0.000083PF
+C3_68 n_40_4 0 0.000109PF
+C4_68 n_40_5 0 0.000109PF
+R1_68 n_40_5 result_reg\[6\]:D 4.000000
+R2_68 n_40_4 n_40_5 1.680000
+R3_68 n_40_3 n_40_4 4.000000
+R4_68 n_40_2 n_40_3 1.260000
+R5_68 n_40_1 n_40_2 4.000000
+R6_68 g436:O n_40_1 4.000000
+
+*|NET n_41 0.000383PF
+*|I (g434:O g434 O O 0.000000PF 23.940 7.000)
+*|I (result_reg\[7\]:D result_reg\[7\] D I 0.001220PF 22.260 9.240)
+*|S (n_41_1 23.940 7.000)
+*|S (n_41_2 23.940 7.000)
+*|S (n_41_3 22.260 7.000)
+*|S (n_41_4 22.260 7.000)
+*|S (n_41_5 22.260 9.240)
+C1_69 n_41_2 0 0.000083PF
+C2_69 n_41_3 0 0.000083PF
+C3_69 n_41_4 0 0.000109PF
+C4_69 n_41_5 0 0.000109PF
+R1_69 n_41_5 result_reg\[7\]:D 4.000000
+R2_69 n_41_4 n_41_5 1.680000
+R3_69 n_41_3 n_41_4 4.000000
+R4_69 n_41_2 n_41_3 1.260000
+R5_69 n_41_1 n_41_2 4.000000
+R6_69 g434:O n_41_1 4.000000
+
+
+
+*
+* instance section
+*
+Xclock__L2_I0 clock__L2_I0:O clock__L2_I0:I INVCKX16
+Xclock__L1_I0 clock__L1_I0:O clock__L1_I0:I INVCKX20
+Xresult_reg\[7\] result_reg\[7\]:Q result_reg\[7\]:D result_reg\[7\]:CK
++ QDFFX1
+Xg434 g434:S g434:O g434:EB g434:B g434:A MUXB2X1
+Xresult_reg\[6\] result_reg\[6\]:Q result_reg\[6\]:D result_reg\[6\]:CK
++ QDFFX1
+Xg436 g436:S g436:O g436:EB g436:B g436:A MUXB2X1
+Xg438 g438:O g438:B2 g438:B1 g438:A1 AO12X1
+Xresult_reg\[5\] result_reg\[5\]:Q result_reg\[5\]:D result_reg\[5\]:CK
++ QDFFX1
+Xg439 g439:S g439:O g439:EB g439:B g439:A MUXB2X1
+Xg441 g441:O g441:B2 g441:B1 g441:A1 AO12X1
+Xresult_reg\[4\] result_reg\[4\]:Q result_reg\[4\]:D result_reg\[4\]:CK
++ QDFFX1
+Xg442 g442:S g442:O g442:EB g442:B g442:A MUXB2X1
+Xg444 g444:O g444:B2 g444:B1 g444:A1 AO12X1
+Xresult_reg\[3\] result_reg\[3\]:Q result_reg\[3\]:D result_reg\[3\]:CK
++ QDFFX1
+Xg445 g445:S g445:O g445:EB g445:B g445:A MUXB2X1
+Xresult_reg\[2\] result_reg\[2\]:Q result_reg\[2\]:D result_reg\[2\]:CK
++ QDFFX1
+Xg447 g447:O g447:B2 g447:B1 g447:A1 AO12X1
+Xresult_reg\[1\] result_reg\[1\]:Q result_reg\[1\]:D result_reg\[1\]:CK
++ QDFFX1
+Xg448 g448:S g448:O g448:EB g448:B g448:A MUXB2X1
+Xg450 g450:O g450:B2 g450:B1 g450:A1 AO12X1
+Xg451 g451:S g451:O g451:EB g451:B g451:A MUXB2X1
+Xresult_reg\[0\] result_reg\[0\]:Q result_reg\[0\]:D result_reg\[0\]:CK
++ QDFFX1
+Xg456 g456:O g456:I INVX1
+Xg453 g453:O g453:B2 g453:B1 g453:A1 OAI12X1
+Xg454 g454:S g454:O g454:EB g454:B g454:A MUXB2X1
+Xg459 g459:O g459:I INVX1
+Xg461 g461:O g461:I INVX1
+Xg463 g463:O g463:I INVX1
+Xg465 g465:O g465:I INVX1
+Xg457 g457:O g457:I1 g457:B1 OR2B1XLP
+Xg458 g458:O g458:I1 g458:B1 OR2B1XLP
+Xg460 g460:O g460:I1 g460:B1 OR2B1XLP
+Xg462 g462:O g462:I1 g462:B1 OR2B1XLP
+Xg464 g464:O g464:I1 g464:B1 OR2B1XLP
+Xg466 g466:O g466:I1 g466:B1 OR2B1XLP
+Xg467 g467:O g467:I INVX1
+Xg468 g468:O g468:B2 g468:B1 g468:A2 g468:A1 MAOI1X1
+Xg455 g455:O g455:I INVXLP
+Xg469 g469:O g469:I2 g469:I1 AN2X1
+Xg479 g479:O g479:I2 g479:I1 ND2X1
+Xg470 g470:O g470:I2 g470:I1 AN2X1
+Xg471 g471:O g471:I2 g471:I1 ND2X1
+Xg472 g472:O g472:I2 g472:I1 NR2X1
+Xg473 g473:O g473:I2 g473:I1 AN2X1
+Xg474 g474:O g474:I2 g474:I1 OR2X1
+Xg476 g476:O g476:I2 g476:I1 OR2X1
+Xg481 g481:O g481:I2 g481:I1 OR2X1
+Xg478 g478:O g478:I2 g478:I1 AN2X1
+Xg475 g475:O g475:I2 g475:I1 OR2X1
+Xg480 g480:O g480:I2 g480:I1 AN2X1
+Xg477 g477:O g477:I2 g477:I1 OR2X1
+Xg482 g482:O g482:I INVX1
+XENDCAP_1 FILLER1
+XENDCAP_2 FILLER2
+XENDCAP_3 FILLER1
+XENDCAP_4 FILLER2
+XENDCAP_5 FILLER1
+XENDCAP_6 FILLER2
+XENDCAP_7 FILLER1
+XENDCAP_8 FILLER2
+XENDCAP_9 FILLER1
+XENDCAP_10 FILLER2
+XENDCAP_11 FILLER1
+XENDCAP_12 FILLER2
+XENDCAP_13 FILLER1
+XENDCAP_14 FILLER2
+XFILLER_impl1_1 FILLER3
+XFILLER_impl1_2 FILLER1
+XFILLER_impl1_3 FILLER1
+XFILLER_impl1_4 FILLER1
+XFILLER_impl1_5 FILLER1
+XFILLER_impl1_6 FILLER2
+XFILLER_impl1_7 FILLER3
+XFILLER_impl1_8 FILLER1
+XFILLER_impl1_9 FILLER3
+XFILLER_impl1_10 FILLER3
+XFILLER_impl1_11 FILLER3
+XFILLER_impl1_12 FILLER2
+XFILLER_impl1_13 FILLER2
+XFILLER_impl1_14 FILLER2
+XFILLER_impl1_15 FILLER2
+XFILLER_impl1_16 FILLER3
+XFILLER_impl1_17 FILLER3
+XFILLER_impl1_18 FILLER3
+XFILLER_impl1_19 FILLER3
+XFILLER_impl1_20 FILLER3
+XFILLER_impl1_21 FILLER3
+XFILLER_impl1_22 FILLER3
+XFILLER_impl1_23 FILLER3
+XFILLER_impl1_24 FILLER3
+XFILLER_impl1_25 FILLER3
+XFILLER_impl1_26 FILLER3
+XFILLER_impl1_27 FILLER3
+XFILLER_impl1_28 FILLER3
+XFILLER_impl1_29 FILLER1
+XFILLER_impl1_30 FILLER3
+XFILLER_impl1_31 FILLER1
+XFILLER_impl1_32 FILLER1
+XFILLER_impl1_33 FILLER3
+XFILLER_impl1_34 FILLER3
+XFILLER_impl1_35 FILLER3
+XFILLER_impl1_36 FILLER2
+XFILLER_impl1_37 FILLER1
+.ENDS
