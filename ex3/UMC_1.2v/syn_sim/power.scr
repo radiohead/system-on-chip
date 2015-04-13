@@ -1,0 +1,14 @@
+#power.scr
+set power_enable_analysis TRUE
+
+set target_library "target_library_path" 
+set link_library "link_library_path" 
+
+create_clock -period 100 -name clk [get_ports {clk}]
+read_db $target_library
+read_verilog filename.v
+list_design -all
+link
+read_vcd filename.vcd -strip_path entity_instance
+create_power_waveforms
+report_power > power_pt.rpt

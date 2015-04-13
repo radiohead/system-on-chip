@@ -1,0 +1,15 @@
+#power.scr
+set power_enable_analysis TRUE
+
+set target_library "/tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/synopsys/fsd0a_a_generic_core_1d2vtc.db" 
+set link_library "/tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/synopsys/fsd0a_a_generic_core_1d2vtc.db *" 
+
+create_clock -period 100 -name clk [get_ports {clk}]
+read_db $target_library
+read_verilog netlist_syn.v
+list_design -all
+current_design counter
+link
+read_vcd design_activity.vcd -strip_path /tcounter/dut
+create_power_waveforms
+report_power > power_pt.rpt

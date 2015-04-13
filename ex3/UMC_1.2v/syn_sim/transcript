@@ -1,0 +1,54 @@
+# //  ModelSim SE-64 6.5f Jun 16 2010 Linux 3.10.72
+# //
+# //  Copyright 1991-2010 Mentor Graphics Corporation
+# //              All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND 
+# //  PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+# //  OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+# //  AND IS SUBJECT TO LICENSE TERMS.
+# //
+# Loading project soc_ex3_1
+vlog netlist_syn.v
+# Model Technology ModelSim SE-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module shift_adder_DW01_add_0
+# -- Compiling module shift_adder
+# 
+# Top level modules:
+# 	shift_adder
+vmap fsd0a_a_generic_core /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/modelsim/Linux/fsd0a_a_generic_core
+# Modifying /home/igosul/system-on-chip/ex3/UMC_1.2v/syn_sim/soc_ex3_1.mpf
+vlog netlist_syn.v
+# Model Technology ModelSim SE-64 vlog 6.5f Compiler 2010.06 Jun 16 2010
+# -- Compiling module shift_adder_DW01_add_0
+# -- Compiling module shift_adder
+# 
+# Top level modules:
+# 	shift_adder
+vcom shift_adder_tb.vhd
+# Model Technology ModelSim SE-64 vcom 6.5f Compiler 2010.06 Jun 16 2010
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling entity shift_adder_testbench
+# -- Compiling architecture testing of shift_adder_testbench
+vsim -t 1ns -L fsd0a_a_generic_core work.shift_adder_testbench
+# vsim -L fsd0a_a_generic_core -t 1ns work.shift_adder_testbench 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading work.shift_adder_testbench(testing)#1
+# Loading work.shift_adder(fast)
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading fsd0a_a_generic_core.vtables
+# Loading fsd0a_a_generic_core.qdffx1(vital)#1
+# Loading fsd0a_a_generic_core.an2b1xlp(vital)#1
+# Loading fsd0a_a_generic_core.tie0x1(vital)#1
+# Loading fsd0a_a_generic_core.xor3x1(vital)#1
+# Loading fsd0a_a_generic_core.an2x1(vital)#1
+# Loading fsd0a_a_generic_core.xor2x1(vital)#1
+# Loading fsd0a_a_generic_core.fa1x1(vital)#1
+vcd file design_activity.vcd
+vcd add -r /shift_adder_testbench/dut/*
+run 1000ns
+exit

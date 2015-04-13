@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : area
+Design : shift_adder
+Version: Y-2006.06
+Date   : Mon Apr 13 10:10:22 2015
+****************************************
+
+Library(s) Used:
+
+    fsd0a_a_generic_core_1d2vtc (File: /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/synopsys/fsd0a_a_generic_core_1d2vtc.db)
+
+Number of ports:               27
+Number of nets:                43
+Number of cells:               18
+Number of references:           4
+
+Combinational area:        276.000000
+Noncombinational area:     136.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           412.000000
+Total area:                 undefined

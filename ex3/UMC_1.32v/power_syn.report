@@ -1,0 +1,46 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+	-analysis_effort low
+Design : shift_adder
+Version: Y-2006.06
+Date   : Mon Apr 13 10:21:14 2015
+****************************************
+
+
+Library(s) Used:
+
+    fsd0a_a_generic_core_1d32vbc (File: /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/synopsys/fsd0a_a_generic_core_1d32vbc.db)
+
+Information: The library cell 'TIE0X1' in the library 'fsd0a_a_generic_core_1d32vbc' is not characterized for internal power. (PWR-227)
+Information: The design contains cells, other than constants and black boxes, that are not characterized for internal power. (PWR-228)
+
+Operating Conditions: BCCOM   Library: fsd0a_a_generic_core_1d32vbc
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+shift_adder            enG5K             fsd0a_a_generic_core_1d32vbc
+shift_adder_DW01_add_1 enG5K             fsd0a_a_generic_core_1d32vbc
+
+
+Global Operating Voltage = 1.32 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+  Cell Internal Power  =   4.1976 uW   (88%)
+  Net Switching Power  = 584.7652 nW   (12%)
+                         ---------
+Total Dynamic Power    =   4.7824 uW  (100%)
+
+Cell Leakage Power     =   1.8089 uW
+

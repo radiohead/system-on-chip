@@ -1,0 +1,44 @@
+Information: Updating design information... (UID-85)
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+	-analysis_effort low
+Design : shift_adder
+Version: Y-2006.06
+Date   : Mon Apr 13 10:24:20 2015
+****************************************
+
+
+Library(s) Used:
+
+    umcl18u250t3_tc_180V_25C (File: /tech/umc/vst/UMCL18U250D3_2.5/design_compiler/umcl18u250t3_tc_180V_25C.db)
+
+
+Operating Conditions: nom_pvt   Library: umcl18u250t3_tc_180V_25C
+Wire Load Model Mode: enclosed
+
+Design        Wire Load Model            Library
+------------------------------------------------
+shift_adder            suggested_10K     umcl18u250t3_tc_180V_25C
+shift_adder_DW01_add_2 suggested_10K     umcl18u250t3_tc_180V_25C
+
+
+Global Operating Voltage = 1.8  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+  Cell Internal Power  =  28.1816 uW   (91%)
+  Net Switching Power  =   2.7287 uW    (9%)
+                         ---------
+Total Dynamic Power    =  30.9103 uW  (100%)
+
+Cell Leakage Power     =  81.3977 nW
+

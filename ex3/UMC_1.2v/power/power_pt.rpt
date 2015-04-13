@@ -1,0 +1,38 @@
+****************************************
+Report : Event Based Power
+Design : shift_adder
+Version: Z-2007.06-SP3
+Date   : Mon Apr 13 10:14:49 2015
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           4.318e-06 5.371e-06 5.678e-07 1.026e-05 (14.03%)  
+sequential              6.218e-05 4.478e-07 2.407e-07 6.287e-05 (85.97%)  
+
+  Net Switching Power  = 5.819e-06   ( 7.96%)
+  Cell Internal Power  = 6.650e-05   (90.94%)
+  Cell Leakage Power   = 8.085e-07   ( 1.11%)
+                         ---------
+Total Power            = 7.312e-05  (100.00%)
+
+X Transition Power     =    0.0000
+Glitching Power        =    0.0000
+
+Peak Power             = 1.264e-04
+Peak Time              =        12
+
+1
