@@ -1,0 +1,14 @@
+Coverage Report Summary Data by file
+
+File: shift_adder.vhd
+    Enabled Coverage        Active      Hits % Covered
+    ----------------        ------      ---- ---------
+    Stmts                        4         4     100.0
+    Branches                     4         4     100.0
+
+File: shift_adder_tb.vhd
+    Enabled Coverage        Active      Hits % Covered
+    ----------------        ------      ---- ---------
+    Stmts                       14        14     100.0
+    Branches                     0         0     100.0
+
