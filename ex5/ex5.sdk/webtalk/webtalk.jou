@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Webtalk v2015.1 (64-bit)
+# SW Build 1215546 on Mon Apr 27 19:37:43 MDT 2015
+# 
+# Start of session at: Tue Jun 09 20:50:22 2015
+# Process ID: 6668
+# Log file: C:/Users/Helena/Student/soc/system-on-chip-master/ex5/ex5.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/Helena/Student/soc/system-on-chip-master/ex5/ex5.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

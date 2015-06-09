@@ -1,0 +1,6 @@
+20:48:04 **** Incremental Build of configuration Debug for project zynq_design ****
+make all 
+make: Цель `all' не требует выполнения команд.
+
+20:48:04 Build Finished (took 123ms)
+

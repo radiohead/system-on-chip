@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="zynq_arm_wrapper.bit" key="zynq_arm_wrapper_hw_platform_0-bitFile"/>
+	<item value="Auto Detect" key="zynq_arm_wrapper_hw_platform_0-device"/>
+	<item value="zynq_arm_wrapper_hw_platform_0" key="programfpga.hwplatform"/>
+	<item value="Local" key="zynq_arm_wrapper_hw_platform_0-target"/>
+	<item value="zynq_arm_wrapper.mmi" key="zynq_arm_wrapper_hw_platform_0-bmmFile"/>
+</section>
