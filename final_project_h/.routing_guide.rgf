@@ -1,0 +1,16 @@
+routeGuideNet clock__L2_N0
+#Trunk_Term begin
+#Trunk clock__L2_I0 O 24.5 20.16
+#Trunk pp0_reg\[3\] CK 7.98 12.04
+#Trunk_Term end
+wire 24.5 20.16 24.5 17.92 V 0.5
+wire 24.5 17.92 24.5 9.24 V 0.5
+wire 24.22 9.24 16.66 9.24 H 0.5
+wire 24.22 9.24 24.5 9.24 H 0.5
+wire 16.66 9.24 16.38 9.24 H 0.5
+wire 16.38 6.44 9.94 6.44 H 0.5
+wire 16.38 6.44 16.38 9.24 V 0.5
+wire 7.98 12.04 7.98 9.24 V 0.5
+wire 7.98 9.24 9.94 9.24 H 0.5
+wire 9.94 9.24 9.94 6.44 V 0.5
+endRouteGuideNet
