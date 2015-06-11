@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : area
+Design : clock_divider
+Version: Y-2006.06
+Date   : Thu Jun 11 14:23:51 2015
+****************************************
+
+Library(s) Used:
+
+    fsd0a_a_generic_core_1d2vtc (File: /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/synopsys/fsd0a_a_generic_core_1d2vtc.db)
+
+Number of ports:                9
+Number of nets:                60
+Number of cells:               51
+Number of references:          14
+
+Combinational area:        191.000000
+Noncombinational area:     345.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           536.000000
+Total area:                 undefined

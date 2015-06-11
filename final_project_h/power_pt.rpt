@@ -1,0 +1,38 @@
+****************************************
+Report : Event Based Power
+Design : multiplier
+Version: Z-2007.06-SP3
+Date   : Thu Jun 11 14:53:40 2015
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000 8.168e-08    0.0000 8.168e-08 ( 0.33%)  
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           1.512e-06 1.008e-06 7.767e-07 3.296e-06 (13.43%)  
+sequential              1.980e-05 3.749e-07 1.001e-06 2.117e-05 (86.24%)  
+
+  Net Switching Power  = 1.464e-06   ( 5.96%)
+  Cell Internal Power  = 2.131e-05   (86.80%)
+  Cell Leakage Power   = 1.778e-06   ( 7.24%)
+                         ---------
+Total Power            = 2.455e-05  (100.00%)
+
+X Transition Power     = 2.364e-11
+Glitching Power        =    0.0000
+
+Peak Power             = 6.475e-04
+Peak Time              =   9990330
+
+1
