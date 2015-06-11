@@ -1,0 +1,23 @@
+ 
+****************************************
+Report : area
+Design : multiplier
+Version: Y-2006.06
+Date   : Thu Jun 11 14:41:54 2015
+****************************************
+
+Library(s) Used:
+
+    fsd0a_a_generic_core_1d2vtc (File: /tech/umc/faraday/Core/fsd0a_a/2007Q1v1.7/GENERIC_CORE_1D2V/FrontEnd/synopsys/fsd0a_a_generic_core_1d2vtc.db)
+
+Number of ports:               19
+Number of nets:                94
+Number of cells:               74
+Number of references:          10
+
+Combinational area:        483.000000
+Noncombinational area:     544.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          1027.000000
+Total area:                 undefined

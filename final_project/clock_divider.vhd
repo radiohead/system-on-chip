@@ -21,8 +21,8 @@ architecture behavioral of clock_divider is
   signal clk2_internal: std_logic;
   signal clk3_internal: std_logic;
 
-  signal clk1_counter: std_logic_vector(2 downto 0);
-  signal clk2_counter: std_logic_vector(1 downto 0);
+  signal clk1_counter: std_logic_vector(3 downto 0);
+  signal clk2_counter: std_logic_vector(2 downto 0);
   signal clk3_counter: std_logic_vector(1 downto 0);
 begin
   execute: process(clock)
@@ -64,16 +64,14 @@ begin
   begin
     if rising_edge(clock) then
       if reset = '1' then
-        clk1_internal <= 'Z';
-        clk1_counter <= std_logic_vector(to_unsigned(0, clk1_counter'length));
+        clk1_internal <= '1';
+        clk1_counter <= std_logic_vector(to_unsigned(1, clk1_counter'length));
       else
         clk1_counter <= std_logic_vector(unsigned(clk1_counter) + 1);
 
-        if unsigned(clk1_counter) = 7 then
-          clk1_counter <= std_logic_vector(to_unsigned(0, clk1_counter'length));
-          clk1_internal <= '1';
-        else
-          clk1_internal <= '0';
+        if unsigned(clk1_counter) = 0 then
+          clk1_counter <= std_logic_vector(to_unsigned(1, clk1_counter'length));
+          clk1_internal <= not clk1_internal;
         end if;
       end if;
     end if;
@@ -83,16 +81,14 @@ begin
   begin
     if rising_edge(clock) then
       if reset = '1' then
-        clk2_internal <= 'Z';
-        clk2_counter <= "00";
+        clk2_internal <= '1';
+        clk2_counter <= std_logic_vector(to_unsigned(1, clk2_counter'length));
       else
         clk2_counter <= std_logic_vector(unsigned(clk2_counter) + 1);
 
-        if unsigned(clk2_counter) = 3 then
-          clk2_counter <= std_logic_vector(to_unsigned(0, clk2_counter'length));
-          clk2_internal <= '1';
-        else
-          clk2_internal <= '0';
+        if unsigned(clk2_counter) = 0 then
+          clk2_counter <= std_logic_vector(to_unsigned(1, clk2_counter'length));
+          clk2_internal <= not clk2_internal;
         end if;
       end if;
     end if;
@@ -102,16 +98,14 @@ begin
   begin
     if rising_edge(clock) then
       if reset = '1' then
-        clk3_internal <= 'Z';
-        clk3_counter <= "00";
+        clk3_internal <= '1';
+        clk3_counter <= std_logic_vector(to_unsigned(1, clk3_counter'length));
       else
         clk3_counter <= std_logic_vector(unsigned(clk3_counter) + 1);
 
-        if unsigned(clk3_counter) = 1 then
-          clk3_counter <= std_logic_vector(to_unsigned(0, clk3_counter'length));
-          clk3_internal <= '1';
-        else
-          clk3_internal <= '0';
+        if unsigned(clk3_counter) = 0 then
+          clk3_counter <= std_logic_vector(to_unsigned(1, clk3_counter'length));
+          clk3_internal <= not clk3_internal;
         end if;
       end if;
     end if;

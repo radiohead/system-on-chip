@@ -64,21 +64,21 @@ begin
 
     tb_reset <= '0';
     tb_enable_all <= '1';
-    wait for clock_period * 16;
+    wait for clock_period * 32;
 
     tb_reset <= '0';
     tb_enable_all <= '0';
     tb_enable_clk1 <= '1';
-    wait for clock_period * 16;
+    wait for clock_period * 32;
 
     tb_reset <= '0';
     tb_enable_all <= '0';
     tb_enable_clk2 <= '1';
-    wait for clock_period * 16;
+    wait for clock_period * 32;
 
     tb_reset <= '0';
     tb_enable_all <= '0';
     tb_enable_clk3 <= '1';
-    wait for clock_period * 16;
+    wait for clock_period * 32;
   end process;
 end behavioral;

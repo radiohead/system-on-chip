@@ -1,0 +1,38 @@
+****************************************
+Report : Event Based Power
+Design : clock_divider
+Version: Z-2007.06-SP3
+Date   : Thu Jun 11 14:39:13 2015
+****************************************
+
+
+
+  Attributes
+  ----------
+      i  -  Including register clock pin internal power
+      u  -  User defined power group
+
+                        Internal  Switching  Leakage    Total
+Power Group             Power     Power      Power      Power   (     %)  Attrs
+--------------------------------------------------------------------------------
+io_pad                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+memory                     0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+black_box                  0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+clock_network              0.0000    0.0000    0.0000    0.0000 ( 0.00%)  i
+register                   0.0000    0.0000    0.0000    0.0000 ( 0.00%)  
+combinational           6.164e-07 3.202e-07 5.431e-07 1.480e-06 (22.97%)  
+sequential              3.741e-06 4.951e-07 7.253e-07 4.962e-06 (77.03%)  
+
+  Net Switching Power  = 8.153e-07   (12.66%)
+  Cell Internal Power  = 4.358e-06   (67.65%)
+  Cell Leakage Power   = 1.268e-06   (19.69%)
+                         ---------
+Total Power            = 6.441e-06  (100.00%)
+
+X Transition Power     =    0.0000
+Glitching Power        =    0.0000
+
+Peak Power             = 4.946e-04
+Peak Time              =    991550
+
+1
